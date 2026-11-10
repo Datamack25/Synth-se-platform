@@ -236,35 +236,52 @@ def _fig_to_png(fig) -> bytes:
     return buf.getvalue()
 
 
-def _style(palette: str):
+# Tailles de caracteres des graphiques. Les valeurs d origine (9 pt) etaient
+# illisibles une fois la figure reduite a la largeur d une colonne : tout est
+# remonte d environ 40 %.
+TAILLE_GRADUATIONS = 13
+TAILLE_AXES = 13
+TAILLE_TITRE = 16
+TAILLE_VALEURS = 12
+TAILLE_LEGENDE = 11
+
+
+def _style(palette: str, figsize: tuple[float, float] = (10.0, 5.6)):
     pal = PALETTES.get(palette, PALETTES["sable"])
-    fig, ax = plt.subplots(figsize=(9, 5))
+    fig, ax = plt.subplots(figsize=figsize)
     fig.patch.set_facecolor(pal["bg"])
     ax.set_facecolor(pal["bg"])
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)
     for s in ("left", "bottom"):
         ax.spines[s].set_color(pal["muted"])
-    ax.tick_params(colors=pal["fg"], labelsize=9)
+        ax.spines[s].set_linewidth(1.1)
+    ax.tick_params(colors=pal["fg"], labelsize=TAILLE_GRADUATIONS,
+                   length=4, width=1.0, pad=5)
     ax.yaxis.label.set_color(pal["fg"])
     ax.xaxis.label.set_color(pal["fg"])
+    ax.yaxis.label.set_fontsize(TAILLE_AXES)
+    ax.xaxis.label.set_fontsize(TAILLE_AXES)
     ax.title.set_color(pal["fg"])
-    ax.grid(axis="y", color=pal["muted"], alpha=0.22, linewidth=0.7)
+    ax.grid(axis="y", color=pal["muted"], alpha=0.22, linewidth=0.8)
     return fig, ax, pal
 
 
 def chart_topics(topics: list[dict], palette: str = "sable") -> bytes:
     fig, ax, pal = _style(palette)
     if not topics:
-        ax.text(0.5, 0.5, "aucun theme detecte", ha="center", color=pal["muted"])
+        ax.text(0.5, 0.5, "aucun theme detecte", ha="center", color=pal["muted"],
+                fontsize=TAILLE_AXES)
         ax.axis("off")
         return _fig_to_png(fig)
     labels = [utils.truncate(t["libelle"], 38) for t in topics][::-1]
     vals = [t["poids"] * 100 for t in topics][::-1]
     ax.barh(labels, vals, color=pal["accent"], height=0.62)
     for i, v in enumerate(vals):
-        ax.text(v + 0.5, i, f"{v:.1f} %", va="center", color=pal["fg"], fontsize=9)
-    ax.set_title("Poids des themes dans le corpus", fontsize=12, loc="left")
+        ax.text(v + 0.6, i, f"{v:.1f} %", va="center", color=pal["fg"],
+                fontsize=TAILLE_VALEURS)
+    ax.set_title("Poids des themes dans le corpus", fontsize=TAILLE_TITRE,
+                 loc="left", pad=12)
     ax.set_xlabel("part du corpus (%)")
     return _fig_to_png(fig)
 
@@ -283,8 +300,9 @@ def chart_page_density(pages_words: list[tuple[int, int]], palette: str = "sable
         ax.scatter(empties, [0] * len(empties), color=pal["accent2"], s=14,
                    zorder=3, label="pages sans texte")
         ax.legend(facecolor=pal["bg"], edgecolor=pal["muted"],
-                  labelcolor=pal["fg"], fontsize=8)
-    ax.set_title("Densite de texte par page", fontsize=12, loc="left")
+                  labelcolor=pal["fg"], fontsize=TAILLE_LEGENDE)
+    ax.set_title("Densite de texte par page", fontsize=TAILLE_TITRE,
+                 loc="left", pad=12)
     ax.set_xlabel("page")
     ax.set_ylabel("mots")
     return _fig_to_png(fig)
@@ -300,7 +318,8 @@ def chart_sections(sections: list[tuple[str, int, int]], palette: str = "sable")
     spans = [max(1, b - a + 1) for _, a, b in sections][::-1]
     starts = [a for _, a, _ in sections][::-1]
     ax.barh(labels, spans, left=starts, color=pal["accent2"], height=0.6)
-    ax.set_title("Decoupage du document en sections", fontsize=12, loc="left")
+    ax.set_title("Decoupage du document en sections", fontsize=TAILLE_TITRE,
+                 loc="left", pad=12)
     ax.set_xlabel("pages")
     return _fig_to_png(fig)
 
@@ -317,9 +336,11 @@ def chart_coverage(report: dict, palette: str = "sable") -> bytes:
     ax.bar(labels, vals, color=cols, width=0.55)
     ax.set_ylim(0, 105)
     for i, v in enumerate(vals):
-        ax.text(i, v + 1.5, f"{v:.1f}", ha="center", color=pal["fg"], fontsize=9)
-    ax.set_title("Controles ARGUS (%)", fontsize=12, loc="left")
-    plt.setp(ax.get_xticklabels(), rotation=12, ha="right")
+        ax.text(i, v + 1.8, f"{v:.1f}", ha="center", color=pal["fg"],
+                fontsize=TAILLE_VALEURS)
+    ax.set_title("Controles ARGUS (%)", fontsize=TAILLE_TITRE, loc="left", pad=12)
+    plt.setp(ax.get_xticklabels(), rotation=14, ha="right",
+             fontsize=TAILLE_GRADUATIONS)
     return _fig_to_png(fig)
 
 
