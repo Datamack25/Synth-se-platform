@@ -2,24 +2,27 @@
    SYNTHEA - Feuille de style
    Palette : encre profonde / vert emeraude sobre / sable
 
-   IMPORTANT - correction du « blanc sur blanc »
+   POURQUOI CETTE FEUILLE EST AUSSI INSISTANTE
    ---------------------------------------------------------
-   La version precedente imposait un fond clair a l application
-   (.stApp { background }) sans imposer la couleur du texte. Sur un
-   navigateur ou un compte en theme sombre, Streamlit gardait son texte
-   blanc : texte blanc sur fond sable, donc illisible.
+   .streamlit/config.toml verrouille le theme en clair, mais ce dossier
+   commence par un point : il est frequemment absent d un depot (l interface
+   web de GitHub ignore souvent les dossiers caches). Sans lui, Streamlit suit
+   la preference du navigateur et passe en theme sombre : les composants natifs
+   (alertes, expanders, boutons, listes, tableaux) gardent alors un fond sombre
+   pendant que la page, elle, est claire. D ou le texte noir sur fond sombre.
 
-   Ici, le fond ET la couleur du texte sont fixes ensemble, sur tous les
-   conteneurs de texte de Streamlit. Le theme est verrouille en clair, en
-   coherence avec .streamlit/config.toml (base = "light").
+   Cette feuille est donc autosuffisante : elle impose le fond ET le texte sur
+   chaque surface, pour que l apparence soit la meme avec ou sans config.toml,
+   en theme clair comme en theme sombre.
    ========================================================= */
 
-:root {
-  --sx-ink:       #17202A;   /* texte principal          */
-  --sx-ink-soft:  #44525F;   /* texte secondaire         */
-  --sx-line:      #DDD7CC;   /* filets et bordures       */
-  --sx-paper:     #FBFAF7;   /* fond de page             */
-  --sx-paper-2:   #F1EEE8;   /* fond secondaire          */
+:root, .stApp {
+  --sx-ink:       #17202A;   /* texte principal     */
+  --sx-ink-soft:  #44525F;   /* texte secondaire    */
+  --sx-line:      #DDD7CC;   /* filets et bordures  */
+  --sx-paper:     #FBFAF7;   /* fond de page        */
+  --sx-paper-2:   #F1EEE8;   /* fond secondaire     */
+  --sx-paper-3:   #F6F4F0;   /* survol, entetes     */
   --sx-white:     #FFFFFF;
   --sx-brand:     #1F6F6B;
   --sx-brand-d:   #14504D;
@@ -28,54 +31,70 @@
   --sx-red:       #A33A2E;
   --sx-amber:     #C08A1E;
   --sx-green:     #2E7D4F;
+  --sx-blue:      #2B5F8E;
   --sx-radius:    10px;
   --sx-shadow:    0 1px 2px rgba(23,32,42,.06), 0 8px 24px rgba(23,32,42,.05);
 
-  /* on neutralise les variables de theme de Streamlit pour eviter
-     qu un theme sombre du navigateur ne reinjecte du texte blanc */
+  /* variables internes de Streamlit : neutralisees pour que les composants
+     natifs cessent de puiser dans la palette sombre */
   --text-color: #17202A;
   --background-color: #FBFAF7;
   --secondary-background-color: #F1EEE8;
+  --primary-color: #1F6F6B;
+  --default-text-color: #17202A;
   color-scheme: light;
 }
 
-/* ---------------------------------------------------------
-   1. Fond ET texte : toujours declares ensemble
-   --------------------------------------------------------- */
+/* =========================================================
+   1. SURFACES GENERALES : fond et texte toujours ensemble
+   ========================================================= */
 html, body, .stApp,
 [data-testid="stAppViewContainer"],
 [data-testid="stMain"],
+[data-testid="stMainBlockContainer"],
+[data-testid="stBottomBlockContainer"],
 .main, .block-container {
   background-color: var(--sx-paper);
   color: var(--sx-ink);
 }
 
-/* tout ce qui porte du texte dans Streamlit */
-.stApp, .stApp p, .stApp li, .stApp span, .stApp label, .stApp div,
-.stApp small, .stApp strong, .stApp em, .stApp td, .stApp th,
-[data-testid="stMarkdownContainer"],
-[data-testid="stMarkdownContainer"] p,
-[data-testid="stMarkdownContainer"] li,
-[data-testid="stText"],
-[data-testid="stWidgetLabel"],
-[data-testid="stWidgetLabel"] p,
-[data-testid="stMetricValue"],
-[data-testid="stMetricLabel"],
-[data-testid="stCaptionContainer"],
-.stRadio label, .stCheckbox label, .stSelectbox label,
-.stMultiSelect label, .stSlider label, .stTextInput label,
-.stNumberInput label, .stTextArea label, .stFileUploader label {
+[data-testid="stHeader"], [data-testid="stToolbar"],
+[data-testid="stDecoration"], [data-testid="stStatusWidget"] {
+  background-color: var(--sx-paper);
   color: var(--sx-ink);
 }
+[data-testid="stDecoration"] { background-image: none; }
 
-/* les nuances volontairement plus douces */
-[data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] p,
-.stApp small, [data-testid="stMetricLabel"] {
-  color: var(--sx-ink-soft) !important;
+/* --- largeur : le contenu occupe toute la page ------------- */
+.block-container, [data-testid="stMainBlockContainer"] {
+  max-width: 100% !important;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-top: 2.2rem;
+  padding-bottom: 3rem;
 }
+[data-testid="stVerticalBlock"], [data-testid="stHorizontalBlock"] { width: 100%; }
 
 html, body, [class*="css"] {
   font-feature-settings: "kern" 1, "liga" 1, "tnum" 1;
+}
+
+/* --- texte --------------------------------------------------- */
+.stApp, .stApp p, .stApp li, .stApp span, .stApp div, .stApp label,
+.stApp small, .stApp strong, .stApp em, .stApp td, .stApp th, .stApp summary,
+[data-testid="stMarkdownContainer"], [data-testid="stMarkdownContainer"] *,
+[data-testid="stText"], [data-testid="stWidgetLabel"],
+[data-testid="stWidgetLabel"] *, [data-testid="stMetricValue"],
+[data-testid="stMetricLabel"], [data-testid="stHeadingWithActionElements"],
+.stRadio label, .stCheckbox label, .stSelectbox label, .stMultiSelect label,
+.stSlider label, .stTextInput label, .stNumberInput label,
+.stTextArea label, .stFileUploader label {
+  color: var(--sx-ink);
+}
+
+[data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] *,
+.stApp small, [data-testid="stMetricLabel"], [data-testid="stMetricLabel"] * {
+  color: var(--sx-ink-soft) !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -88,17 +107,14 @@ h1 { font-weight: 680; }
 a, .stApp a { color: var(--sx-brand-d); }
 a:hover, .stApp a:hover { color: var(--sx-brand); }
 
-code, .stApp code {
-  background: var(--sx-paper-2);
-  color: var(--sx-brand-d);
-  border-radius: 4px;
-  padding: 1px 5px;
-}
+hr, [data-testid="stDivider"] hr { border-color: var(--sx-line); }
 
-/* en-tete et barre laterale : fond et texte fixes ensemble */
-[data-testid="stHeader"] { background-color: var(--sx-paper); }
+/* =========================================================
+   2. BARRE LATERALE
+   ========================================================= */
 [data-testid="stSidebar"],
 [data-testid="stSidebarContent"],
+[data-testid="stSidebarUserContent"],
 section[data-testid="stSidebar"] > div {
   background-color: var(--sx-paper-2);
   color: var(--sx-ink);
@@ -108,88 +124,430 @@ section[data-testid="stSidebar"] > div {
 [data-testid="stSidebar"] [data-testid="stCaptionContainer"] * {
   color: var(--sx-ink-soft) !important;
 }
+[data-testid="stSidebarCollapseButton"] button,
+[data-testid="stSidebarCollapsedControl"] button {
+  background-color: transparent;
+  color: var(--sx-ink);
+}
 div[data-testid="stSidebarUserContent"] { padding-top: 8px; }
 
-/* ---------------------------------------------------------
-   2. Onglets : lisibles, cliquables, et tous visibles
-   Streamlit a change de DOM selon les versions : on vise a la fois
-   [data-baseweb="tab"] (ancien) et [data-testid="stTab"] (recent).
-   --------------------------------------------------------- */
-.stTabs [data-baseweb="tab-list"],
-div[role="tablist"] {
+/* =========================================================
+   3. ALERTES  (st.info / success / warning / error)
+   C etait le « texte noir sur bleu nuit » : le fond venait du theme
+   sombre de Streamlit, le texte de cette feuille.
+   ========================================================= */
+[data-testid="stAlert"] { background-color: transparent; }
+
+[data-testid="stAlertContainer"] {
+  background-color: var(--sx-brand-l);
+  color: var(--sx-ink) !important;
+  border: 1px solid #CBE0DE;
+  border-left: 4px solid var(--sx-brand);
+  border-radius: var(--sx-radius);
+}
+[data-testid="stAlertContainer"] *,
+[data-testid="stAlertContainer"] p,
+[data-testid="stAlertContainer"] li,
+[data-testid="stAlertContainer"] strong {
+  color: var(--sx-ink) !important;
+}
+
+/* information */
+[data-testid="stAlertContainer"]:has([data-testid="stAlertContentInfo"]) {
+  background-color: #EEF4FB;
+  border-color: #CBDCEE;
+  border-left-color: var(--sx-blue);
+}
+/* succes */
+[data-testid="stAlertContainer"]:has([data-testid="stAlertContentSuccess"]) {
+  background-color: #E7F3EC;
+  border-color: #C9E4D4;
+  border-left-color: var(--sx-green);
+}
+/* avertissement */
+[data-testid="stAlertContainer"]:has([data-testid="stAlertContentWarning"]) {
+  background-color: #FBF2DC;
+  border-color: #EEDDB4;
+  border-left-color: var(--sx-amber);
+}
+/* erreur */
+[data-testid="stAlertContainer"]:has([data-testid="stAlertContentError"]) {
+  background-color: #F8E9E6;
+  border-color: #EDCCC6;
+  border-left-color: var(--sx-red);
+}
+/* repli pour les navigateurs sans :has() */
+[data-testid="stAlertContentInfo"], [data-testid="stAlertContentSuccess"],
+[data-testid="stAlertContentWarning"], [data-testid="stAlertContentError"] {
+  color: var(--sx-ink) !important;
+  background-color: transparent;
+}
+[data-testid="stAlertContainer"] svg { fill: currentColor; }
+
+[data-testid="stException"], [data-testid="stExceptionMessage"] {
+  background-color: #F8E9E6;
+  color: var(--sx-ink);
+  border: 1px solid #EDCCC6;
+  border-radius: var(--sx-radius);
+}
+
+/* =========================================================
+   4. EXPANDERS
+   ========================================================= */
+[data-testid="stExpander"] {
+  border: 1px solid var(--sx-line);
+  border-radius: var(--sx-radius);
+  background-color: var(--sx-white);
+  overflow: hidden;
+}
+[data-testid="stExpander"] details { background-color: var(--sx-white); }
+[data-testid="stExpander"] summary {
+  background-color: var(--sx-paper-3) !important;
+  color: var(--sx-ink) !important;
+  font-weight: 600;
+}
+[data-testid="stExpander"] summary:hover {
+  background-color: var(--sx-brand-l) !important;
+  color: var(--sx-brand-d) !important;
+}
+[data-testid="stExpander"] summary *,
+[data-testid="stExpanderDetails"], [data-testid="stExpanderDetails"] * {
+  color: inherit;
+}
+[data-testid="stExpanderDetails"] { background-color: var(--sx-white); }
+[data-testid="stExpander"] svg { fill: currentColor; }
+
+/* =========================================================
+   5. BOUTONS
+   ========================================================= */
+.stButton button, .stDownloadButton button, .stFormSubmitButton button,
+[data-testid="stBaseButton-secondary"], [data-testid="stBaseButton-secondaryFormSubmit"] {
+  background-color: var(--sx-white) !important;
+  color: var(--sx-ink) !important;
+  border: 1px solid var(--sx-line) !important;
+  cursor: pointer;
+  font-weight: 560;
+}
+.stButton button:hover, .stDownloadButton button:hover,
+[data-testid="stBaseButton-secondary"]:hover {
+  border-color: var(--sx-brand) !important;
+  color: var(--sx-brand-d) !important;
+  background-color: var(--sx-brand-l) !important;
+}
+.stButton button[kind="primary"], .stDownloadButton button[kind="primary"],
+[data-testid="stBaseButton-primary"], [data-testid="stBaseButton-primaryFormSubmit"] {
+  background-color: var(--sx-brand) !important;
+  border-color: var(--sx-brand) !important;
+  color: var(--sx-white) !important;
+}
+.stButton button[kind="primary"] *, [data-testid="stBaseButton-primary"] * {
+  color: var(--sx-white) !important;
+}
+[data-testid="stBaseButton-primary"]:hover { background-color: var(--sx-brand-d) !important; }
+.stButton button:disabled, [data-testid="stBaseButton-primary"]:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+.stButton button svg, .stDownloadButton button svg { fill: currentColor; }
+
+/* boutons discrets : aide, copie, plein ecran, barre d outils */
+[data-testid="stBaseButton-minimal"],
+[data-testid="stBaseButton-borderlessIcon"],
+[data-testid="stBaseButton-elementToolbar"],
+[data-testid="stElementToolbarButton"] {
+  background-color: transparent !important;
+  color: var(--sx-ink-soft) !important;
+  border: none !important;
+}
+[data-testid="stElementToolbar"] {
+  background-color: var(--sx-white);
+  border: 1px solid var(--sx-line);
+  border-radius: 8px;
+}
+
+/* =========================================================
+   6. CHAMPS DE SAISIE, LISTES, CURSEURS
+   ========================================================= */
+[data-baseweb="input"], [data-baseweb="base-input"], [data-baseweb="textarea"],
+.stTextInput input, .stNumberInput input, .stTextArea textarea,
+[data-testid="stTextInputRootElement"], [data-testid="stNumberInputContainer"] {
+  background-color: var(--sx-white) !important;
+  color: var(--sx-ink) !important;
+  border-color: var(--sx-line) !important;
+}
+input::placeholder, textarea::placeholder { color: #98A2AD !important; }
+
+/* Listes deroulantes et multiselection.
+   Les versions recentes de Streamlit n exposent plus data-baseweb sur ces
+   controles : leurs classes (st-emotion-cache-xxxx) changent a chaque version.
+   On s accroche donc aux seuls reperes stables : le data-testid du widget,
+   role="group" pour le cadre du controle, role="combobox" pour la saisie,
+   et l attribut data-tag pour les etiquettes de multiselection. */
+[data-baseweb="select"], [data-baseweb="select"] > div, [data-baseweb="select-control"],
+[data-testid="stSelectbox"] div[role="group"],
+[data-testid="stMultiSelect"] div[role="group"],
+[data-testid="stDateInput"] div[role="group"],
+[data-testid="stTimeInput"] div[role="group"],
+.react-aria-ComboBox, .react-aria-ComboBox > div,
+[data-testid="stMultiSelectTagsContainer"] {
+  background-color: var(--sx-white) !important;
+  color: var(--sx-ink) !important;
+  border-color: var(--sx-line) !important;
+}
+[role="combobox"], input[role="combobox"] {
+  background-color: var(--sx-white) !important;
+  color: var(--sx-ink) !important;
+}
+[data-testid="stSelectbox"] svg, [data-testid="stMultiSelect"] svg,
+[data-baseweb="select"] svg { fill: var(--sx-ink-soft); }
+
+/* etiquettes de multiselection : vert de marque, texte blanc
+   (elles ressortaient en rouge, couleur primaire du theme sombre) */
+[data-testid="stMultiSelectTagsContainer"] span[data-tag],
+[data-baseweb="tag"] {
+  background-color: var(--sx-brand) !important;
+  color: var(--sx-white) !important;
+  border-radius: 6px;
+  border: none !important;
+}
+[data-testid="stMultiSelectTagsContainer"] span[data-tag] *,
+[data-baseweb="tag"] * { color: var(--sx-white) !important; }
+[data-testid="stMultiSelectTagsContainer"] span[data-tag] svg,
+[data-baseweb="tag"] svg { fill: var(--sx-white) !important; }
+[data-testid="stMultiSelectTagsContainer"] span[data-tag]:hover {
+  background-color: var(--sx-brand-d) !important;
+}
+
+/* menus deroulants */
+[data-baseweb="popover"], [data-baseweb="popover"] > div,
+[data-baseweb="menu"], [role="listbox"], [data-testid="stSelectboxVirtualDropdown"] {
+  background-color: var(--sx-white) !important;
+  color: var(--sx-ink) !important;
+  border: 1px solid var(--sx-line);
+}
+[role="option"], [role="option"] * { color: var(--sx-ink) !important; }
+[role="option"]:hover, [aria-selected="true"][role="option"] {
+  background-color: var(--sx-brand-l) !important;
+  color: var(--sx-brand-d) !important;
+}
+
+/* etiquettes du multiselect */
+[data-baseweb="tag"] {
+  background-color: var(--sx-brand) !important;
+  color: var(--sx-white) !important;
+  border-radius: 6px;
+}
+[data-baseweb="tag"] * { color: var(--sx-white) !important; }
+[data-baseweb="tag"] svg { fill: var(--sx-white); }
+
+/* Curseurs. La portion remplie n est pas une couleur de fond mais un
+   linear-gradient dont les arrets sont ecrits en dur par Streamlit (rouge en
+   theme sombre). On supprime donc le degrade et on repeint la barre en vert
+   de marque ; la poignee, cerclee de blanc, marque la valeur. */
+[data-testid="stSlider"] div[role="group"] > div > div,
+[data-testid="stSlider"] div[role="slider"],
+[data-testid="stSlider"] [data-baseweb="slider"] div[role="slider"] {
+  background-color: var(--sx-brand) !important;
+  background-image: none !important;
+}
+[data-testid="stSlider"] div[role="slider"] {
+  box-shadow: 0 0 0 2px var(--sx-white), 0 1px 3px rgba(23,32,42,.35) !important;
+}
+[data-testid="stSlider"] div[role="group"] > div {
+  background-color: var(--sx-paper-2);        /* rail */
+}
+/* la barre de graduations et la saisie masquee ne doivent pas etre peintes :
+   selecteur volontairement plus specifique que la regle verte ci-dessus */
+[data-testid="stSlider"] div[role="group"] > div > div[data-testid="stSliderTickBar"],
+[data-testid="stSlider"] div[role="group"] input,
+[data-testid="stSliderTickBar"] {
+  background-color: transparent !important;
+}
+[data-testid="stSliderTickBarMin"], [data-testid="stSliderTickBarMax"],
+[data-testid="stThumbValue"] { color: var(--sx-ink-soft) !important; }
+[data-testid="stCheckbox"] label, [data-testid="stToggle"] label,
+[data-testid="stRadio"] label { color: var(--sx-ink) !important; }
+[data-baseweb="checkbox"] span[data-checked="true"] { background-color: var(--sx-brand); }
+
+/* televersement */
+[data-testid="stFileUploader"], [data-testid="stFileUploaderDropzone"] {
+  background-color: var(--sx-paper-3) !important;
+  border: 1px dashed var(--sx-line) !important;
+  color: var(--sx-ink) !important;
+  border-radius: var(--sx-radius);
+}
+[data-testid="stFileUploaderDropzone"] * { color: var(--sx-ink) !important; }
+[data-testid="stFileUploaderDropzone"] button,
+[data-testid="stFileUploaderDropzone"] [data-testid="stBaseButton-secondary"] {
+  background-color: var(--sx-white) !important;
+  color: var(--sx-ink) !important;
+  border: 1px solid var(--sx-line) !important;
+}
+[data-testid="stFileUploaderFile"] {
+  background-color: var(--sx-white);
+  border: 1px solid var(--sx-line);
+  border-radius: 8px;
+  color: var(--sx-ink);
+}
+
+/* =========================================================
+   7. ONGLETS : lisibles, cliquables, tous visibles
+   ========================================================= */
+.stTabs [data-baseweb="tab-list"], div[role="tablist"] {
   gap: 2px;
   border-bottom: 1px solid var(--sx-line);
   background-color: transparent;
-  flex-wrap: wrap;          /* 13 onglets : ils passent a la ligne */
-  overflow-x: visible;       /* plus de defilement masquant les onglets */
+  flex-wrap: wrap;          /* 13 onglets : passage a la ligne, rien n est coupe */
+  overflow-x: visible;
   overflow-y: visible;
   row-gap: 0;
 }
 
-.stTabs [data-baseweb="tab"],
-[data-testid="stTab"],
-button[role="tab"] {
+.stTabs [data-baseweb="tab"], [data-testid="stTab"], button[role="tab"] {
   font-size: .86rem;
   font-weight: 560;
   padding: 9px 14px;
   color: var(--sx-ink-soft);
   background-color: transparent;
-  opacity: 1;                /* l opacite reduite rendait le texte fantome */
-  cursor: pointer;           /* l onglet doit se voir comme cliquable */
+  opacity: 1;
+  cursor: pointer;
   border-radius: 8px 8px 0 0;
   white-space: nowrap;
   transition: background-color .12s ease, color .12s ease;
 }
-
-.stTabs [data-baseweb="tab"] *,
-[data-testid="stTab"] *,
-button[role="tab"] * {
+.stTabs [data-baseweb="tab"] *, [data-testid="stTab"] *, button[role="tab"] * {
   color: inherit !important;
   opacity: 1 !important;
 }
-
-.stTabs [data-baseweb="tab"]:hover,
-[data-testid="stTab"]:hover,
+.stTabs [data-baseweb="tab"]:hover, [data-testid="stTab"]:hover,
 button[role="tab"]:hover {
   color: var(--sx-brand-d);
   background-color: var(--sx-brand-l);
 }
-
-.stTabs [aria-selected="true"],
-[data-testid="stTab"][aria-selected="true"],
+.stTabs [aria-selected="true"], [data-testid="stTab"][aria-selected="true"],
 button[role="tab"][aria-selected="true"] {
   color: var(--sx-brand-d) !important;
   font-weight: 680;
   background-color: var(--sx-white);
 }
-.stTabs [aria-selected="true"] * ,
-[data-testid="stTab"][aria-selected="true"] * {
+.stTabs [aria-selected="true"] *, [data-testid="stTab"][aria-selected="true"] * {
   color: var(--sx-brand-d) !important;
 }
-
-/* le soulignement actif de Streamlit, a notre couleur */
-.stTabs [data-baseweb="tab-highlight"],
-[data-baseweb="tab-highlight"] {
-  background-color: var(--sx-brand) !important;
-}
-/* la barre de defilement horizontale n a plus lieu d etre */
+[data-baseweb="tab-highlight"] { background-color: var(--sx-brand) !important; }
 .stTabs [data-baseweb="tab-border"] { background-color: var(--sx-line); }
-
-/* panneau d onglet : fond et texte explicites */
 [data-baseweb="tab-panel"], [role="tabpanel"] {
   background-color: transparent;
   color: var(--sx-ink);
 }
 
-/* ---------------------------------------------------------
-   3. Bandeau d entete
-   --------------------------------------------------------- */
+/* =========================================================
+   8. TABLEAUX ET DONNEES
+   ========================================================= */
+[data-testid="stDataFrame"], [data-testid="stTable"] {
+  background-color: var(--sx-white);
+  color: var(--sx-ink);
+  border: 1px solid var(--sx-line);
+  border-radius: var(--sx-radius);
+}
+[data-testid="stTable"] table { background-color: var(--sx-white); color: var(--sx-ink); }
+[data-testid="stTable"] thead th {
+  background-color: var(--sx-paper-2) !important;
+  color: var(--sx-ink-soft) !important;
+  font-size: .70rem; text-transform: uppercase; letter-spacing: .08em;
+  border-bottom: 1px solid var(--sx-line) !important;
+}
+[data-testid="stTable"] tbody td {
+  color: var(--sx-ink) !important;
+  border-bottom: 1px solid var(--sx-paper-2) !important;
+}
+[data-testid="stTable"] tbody tr:hover td { background-color: #FCFBF8 !important; }
+
+/* tableaux HTML maison (ui.table) */
+.sx-table {
+  width: 100%; border-collapse: collapse; font-size: .84rem;
+  color: var(--sx-ink); background: var(--sx-white);
+  border: 1px solid var(--sx-line); border-radius: var(--sx-radius);
+  overflow: hidden; margin: 2px 0 14px 0;
+}
+.sx-table th {
+  text-align: left; font-size: .70rem; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--sx-ink-soft); background: var(--sx-paper-2);
+  border-bottom: 1px solid var(--sx-line); padding: 9px 12px; white-space: nowrap;
+}
+.sx-table td {
+  padding: 8px 12px; border-bottom: 1px solid var(--sx-paper-2);
+  vertical-align: top; color: var(--sx-ink);
+}
+.sx-table tr:last-child td { border-bottom: none; }
+.sx-table tr:hover td { background: #FCFBF8; }
+.sx-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.sx-table .ok  { color: var(--sx-green); font-weight: 600; }
+.sx-table .no  { color: var(--sx-red);   font-weight: 600; }
+.sx-table .mid { color: var(--sx-amber); font-weight: 600; }
+.sx-wrap { overflow-x: auto; }
+.sx-note { font-size: .74rem; color: var(--sx-ink-soft); margin: -8px 0 14px 0; }
+
+/* =========================================================
+   9. CODE, JSON, DISCUSSION, PROGRESSION
+   ========================================================= */
+code, .stApp code, [data-testid="stCode"] code {
+  background: var(--sx-paper-2);
+  color: var(--sx-brand-d);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+[data-testid="stCode"], [data-testid="stCode"] pre, .stCodeBlock pre, pre {
+  background-color: var(--sx-paper-2) !important;
+  color: var(--sx-ink) !important;
+  border: 1px solid var(--sx-line);
+  border-radius: var(--sx-radius);
+}
+[data-testid="stJson"] {
+  background-color: var(--sx-paper-2);
+  border: 1px solid var(--sx-line);
+  border-radius: var(--sx-radius);
+  color: var(--sx-ink);
+}
+[data-testid="stChatMessage"] {
+  background-color: var(--sx-white);
+  border: 1px solid var(--sx-line);
+  border-radius: var(--sx-radius);
+  color: var(--sx-ink);
+}
+[data-testid="stChatInput"], [data-testid="stChatInput"] textarea {
+  background-color: var(--sx-white) !important;
+  color: var(--sx-ink) !important;
+  border-color: var(--sx-line) !important;
+}
+[data-testid="stProgress"] > div > div { background-color: var(--sx-paper-2); }
+[data-testid="stProgress"] > div > div > div > div { background-color: var(--sx-brand); }
+[data-testid="stSpinner"] { color: var(--sx-ink-soft); }
+[data-testid="stTooltipContent"] {
+  background-color: var(--sx-ink) !important;
+  color: var(--sx-white) !important;
+}
+[data-testid="stTooltipContent"] * { color: var(--sx-white) !important; }
+/* icone d aide : un « ? » gris discret, et non une pastille noire */
+[data-testid="stTooltipIcon"], [data-testid="stTooltipIcon"] svg {
+  color: var(--sx-ink-soft) !important;
+  stroke: currentColor;
+}
+[data-testid="stTooltipIcon"] svg path[fill]:not([fill="none"]) {
+  fill: var(--sx-ink-soft) !important;
+}
+[data-testid="stTooltipIcon"]:hover, [data-testid="stTooltipIcon"]:hover svg {
+  color: var(--sx-brand) !important;
+}
+
+/* =========================================================
+   10. COMPOSANTS SYNTHEA
+   ========================================================= */
 .sx-hero {
   border: 1px solid var(--sx-line);
   border-left: 4px solid var(--sx-brand);
   border-radius: var(--sx-radius);
   background: linear-gradient(180deg, var(--sx-white) 0%, var(--sx-paper-2) 100%);
-  padding: 20px 24px;
+  padding: 20px 26px;
   box-shadow: var(--sx-shadow);
   margin-bottom: 18px;
   color: var(--sx-ink);
@@ -199,14 +557,11 @@ button[role="tab"][aria-selected="true"] {
   color: var(--sx-brand-d); font-weight: 700;
 }
 .sx-hero h1 { margin: 6px 0 4px 0; font-size: 1.65rem; color: var(--sx-ink); }
-.sx-hero p  { margin: 0; color: var(--sx-ink-soft); font-size: .92rem; max-width: 70ch; }
+.sx-hero p  { margin: 0; color: var(--sx-ink-soft); font-size: .92rem; max-width: 110ch; }
 
-/* ---------------------------------------------------------
-   4. Tuiles d indicateurs
-   --------------------------------------------------------- */
 .sx-kpi-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 6px 0 16px 0; }
 .sx-kpi {
-  flex: 1 1 150px; background: var(--sx-white); border: 1px solid var(--sx-line);
+  flex: 1 1 170px; background: var(--sx-white); border: 1px solid var(--sx-line);
   border-radius: var(--sx-radius); padding: 14px 16px; box-shadow: var(--sx-shadow);
   color: var(--sx-ink);
 }
@@ -218,7 +573,6 @@ button[role="tab"][aria-selected="true"] {
 .sx-kpi.bad  { border-top: 3px solid var(--sx-red); }
 .sx-kpi.brand{ border-top: 3px solid var(--sx-brand); }
 
-/* metriques natives de Streamlit */
 [data-testid="stMetric"] {
   background: var(--sx-white); border: 1px solid var(--sx-line);
   border-top: 3px solid var(--sx-brand);
@@ -226,9 +580,6 @@ button[role="tab"][aria-selected="true"] {
 }
 [data-testid="stMetricValue"] { color: var(--sx-ink); font-weight: 660; }
 
-/* ---------------------------------------------------------
-   5. Cartes, badges, fiches agents
-   --------------------------------------------------------- */
 .sx-card {
   background: var(--sx-white); border: 1px solid var(--sx-line);
   border-radius: var(--sx-radius);
@@ -264,14 +615,12 @@ button[role="tab"][aria-selected="true"] {
 .sx-agent .ro { font-size: .74rem; text-transform: uppercase; letter-spacing: .09em; color: var(--sx-brand-d); font-weight: 650; }
 .sx-agent .ms { font-size: .84rem; color: var(--sx-ink-soft); margin-top: 4px; }
 
-/* ---------------------------------------------------------
-   6. Rendu document (synthese)
-   --------------------------------------------------------- */
+/* rendu document : plein cadre, plus de colonne etroite */
 .sx-doc {
   background: var(--sx-white); border: 1px solid var(--sx-line);
   border-radius: var(--sx-radius);
-  padding: 30px 38px; box-shadow: var(--sx-shadow); max-width: 86ch;
-  color: var(--sx-ink);
+  padding: 30px 38px; box-shadow: var(--sx-shadow);
+  max-width: 100%; color: var(--sx-ink);
 }
 .sx-doc h1 { font-size: 1.5rem; margin: 0 0 2px 0; color: var(--sx-ink); }
 .sx-doc .sx-sub {
@@ -282,7 +631,7 @@ button[role="tab"][aria-selected="true"] {
   font-size: 1.02rem; margin: 22px 0 8px 0; padding-bottom: 4px;
   border-bottom: 1px solid var(--sx-paper-2); color: var(--sx-brand-d);
 }
-.sx-doc p, .sx-doc li { font-size: .92rem; line-height: 1.62; color: var(--sx-ink); }
+.sx-doc p, .sx-doc li { font-size: .92rem; line-height: 1.62; color: var(--sx-ink); max-width: 95ch; }
 .sx-doc blockquote {
   border-left: 3px solid var(--sx-gold); margin: 14px 0; padding: 4px 16px;
   color: var(--sx-ink-soft); font-style: italic; background: #FDFBF6;
@@ -292,98 +641,45 @@ button[role="tab"][aria-selected="true"] {
   padding: 1px 6px; border-radius: 4px; margin-left: 4px; white-space: nowrap;
 }
 
-/* ---------------------------------------------------------
-   7. Jauge, journal, tableaux
-   --------------------------------------------------------- */
 .sx-gauge { height: 9px; border-radius: 999px; background: var(--sx-paper-2); overflow: hidden; margin: 7px 0 3px 0; }
 .sx-gauge > i { display: block; height: 100%; border-radius: 999px; background: var(--sx-brand); }
 .sx-gauge.warn > i { background: var(--sx-amber); }
 .sx-gauge.bad  > i { background: var(--sx-red); }
 
-/* le journal est le seul bloc volontairement sombre : son texte est clair */
+/* le journal des agents est le seul bloc volontairement sombre :
+   son texte y est clair, le contraste est donc correct */
 .sx-log {
   font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   font-size: .78rem; line-height: 1.55; background: #111820; color: #D7E3E1;
   border-radius: var(--sx-radius); padding: 14px 16px; max-height: 420px; overflow: auto;
 }
-.sx-log div { color: #D7E3E1; }
+.sx-log div, .sx-log span { color: #D7E3E1; }
 .sx-log .t { color: #6F8B88; }
 .sx-log .a { color: #8FD3C6; font-weight: 600; }
 .sx-log .w { color: #E8C275; }
 .sx-log .e { color: #E79A8C; }
 
-.sx-table { width: 100%; border-collapse: collapse; font-size: .84rem; color: var(--sx-ink); }
-.sx-table th {
-  text-align: left; font-size: .70rem; text-transform: uppercase; letter-spacing: .09em;
-  color: var(--sx-ink-soft); border-bottom: 1px solid var(--sx-line);
-  padding: 8px 10px; background: var(--sx-paper-2);
-}
-.sx-table td { padding: 8px 10px; border-bottom: 1px solid var(--sx-paper-2); vertical-align: top; }
-.sx-table tr:hover td { background: #FCFBF8; }
-
-/* tableaux natifs de Streamlit */
-[data-testid="stDataFrame"], [data-testid="stTable"] { color: var(--sx-ink); }
-
-/* ---------------------------------------------------------
-   8. Champs, boutons, expanders
-   --------------------------------------------------------- */
-.stTextInput input, .stNumberInput input, .stTextArea textarea,
-[data-baseweb="input"] input, [data-baseweb="textarea"] textarea {
-  color: var(--sx-ink) !important;
-  background-color: var(--sx-white) !important;
-}
-[data-baseweb="select"] div { color: var(--sx-ink); }
-[data-baseweb="popover"], [data-baseweb="menu"], [role="listbox"] {
-  background-color: var(--sx-white);
-  color: var(--sx-ink);
-}
-[role="option"] { color: var(--sx-ink); }
-
-.stButton button, .stDownloadButton button {
-  border: 1px solid var(--sx-line);
-  color: var(--sx-ink);
-  background-color: var(--sx-white);
-  cursor: pointer;
-}
-.stButton button:hover, .stDownloadButton button:hover {
-  border-color: var(--sx-brand);
-  color: var(--sx-brand-d);
-}
-.stButton button[kind="primary"], .stDownloadButton button[kind="primary"] {
-  background-color: var(--sx-brand);
-  border-color: var(--sx-brand);
-  color: var(--sx-white);
-}
-.stButton button[kind="primary"] * { color: var(--sx-white) !important; }
-
-[data-testid="stExpander"] {
-  border: 1px solid var(--sx-line);
-  border-radius: var(--sx-radius);
-  background-color: var(--sx-white);
-}
-[data-testid="stExpander"] summary, [data-testid="stExpander"] p { color: var(--sx-ink); }
-
-[data-testid="stFileUploaderDropzone"] {
-  background-color: var(--sx-paper-2);
-  border: 1px dashed var(--sx-line);
-  color: var(--sx-ink);
-}
-
-/* ---------------------------------------------------------
-   9. Divers
-   --------------------------------------------------------- */
-footer, #MainMenu { visibility: hidden; }
 .sx-foot {
   color: var(--sx-ink-soft); font-size: .74rem; text-align: center;
   border-top: 1px solid var(--sx-line); margin-top: 26px; padding-top: 12px;
 }
 
-/* un element « perime » pendant un recalcul ne doit pas devenir invisible */
-[data-stale="true"], .stale-element, [data-testid="stStale"] {
-  opacity: .72 !important;
-}
+/* =========================================================
+   11. DIVERS
+   ========================================================= */
+footer, #MainMenu { visibility: hidden; }
 
-/* petits ecrans : les onglets restent lisibles */
+/* un element recalcule ne doit pas devenir invisible */
+[data-stale="true"], .stale-element, [data-testid="stStale"] { opacity: .72 !important; }
+
+img { border-radius: 8px; }
+
+@media (max-width: 1100px) {
+  .block-container, [data-testid="stMainBlockContainer"] {
+    padding-left: 1.2rem; padding-right: 1.2rem;
+  }
+  .sx-doc { padding: 20px 20px; }
+}
 @media (max-width: 900px) {
   .stTabs [data-baseweb="tab"], [data-testid="stTab"] {
     font-size: .80rem; padding: 8px 10px;
