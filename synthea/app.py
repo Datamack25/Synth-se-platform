@@ -14,7 +14,7 @@ import streamlit.components.v1 as components
 
 from core import (agents, budget, contexts, exporters, extraction, html_report,
                   imaging, lexicons, llm, ml, qa, summarizer, tab_transform,
-                  translation, utils, websearch)
+                  translation, ui, utils, websearch)
 
 # =====================================================================
 # Configuration
@@ -83,11 +83,13 @@ def need_doc() -> bool:
 
 
 def df(rows: list[dict], height: int | None = None) -> None:
-    if not rows:
-        st.caption("aucune donnee")
-        return
-    kw = {"height": height} if height else {}
-    st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True, **kw)
+    """Rendu unique pour toute l application (cf. core.ui.df) : tableau HTML
+    stylable pour les listes courtes, composant natif au-dela."""
+    ui.df(rows, height)
+
+
+def table(rows: list[dict], note: str = "") -> None:
+    ui.table(rows, note)
 
 
 # =====================================================================
@@ -167,7 +169,7 @@ def sidebar() -> None:
                             help="Sans cle API, SYNTHEA reste en mode extractif : "
                                  "chaque phrase provient litteralement du document.")
 
-    go = st.sidebar.button("Lancer les 11 agents", type="primary",
+    go = st.sidebar.button("Lancer les 11 agents d analyse", type="primary",
                            use_container_width=True, disabled=not files)
 
     if SS["state"]:
@@ -222,7 +224,7 @@ def run_pipeline(files, options: dict) -> None:
 def tab_accueil() -> None:
     hero("Document intelligence suite",
          "SYNTHEA",
-         "Onze agents lisent un document de 1 a 2000 pages, le resument a trois "
+         "Seize agents lisent un document de 1 a 2000 pages, le resument a trois "
          "niveaux, le restituent dans douze contextes de presentation, le "
          "traduisent en cinq langues, l illustrent, repondent a tes questions et "
          "verifient eux-memes que rien n a ete oublie.")
@@ -292,7 +294,7 @@ def tab_accueil() -> None:
                    "pleinement fonctionnelle.")
 
     st.divider()
-    st.markdown("#### Les onze agents")
+    st.markdown("#### Les seize agents")
     st.markdown(agents.agent_cards_html(), unsafe_allow_html=True)
 
 
@@ -364,7 +366,7 @@ def tab_import() -> None:
 # Onglet 3 - Agents
 # =====================================================================
 def tab_agents() -> None:
-    hero("Orchestration", "Les onze agents",
+    hero("Orchestration", "Les seize agents",
          "Chaque agent a un role unique, des entrees et des sorties explicites. "
          "Le journal ci-dessous trace chacune de leurs actions, avec sa duree.")
 
