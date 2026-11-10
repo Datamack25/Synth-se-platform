@@ -12,9 +12,33 @@ import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
 
-from core import (agents, budget, contexts, exporters, extraction, html_report,
-                  imaging, lexicons, llm, ml, qa, summarizer, tab_transform,
-                  translation, ui, utils, websearch)
+# Les modules du noyau sont importes en bloc. Si l un d eux manque (fichier non
+# televerse sur le depot, par exemple), Streamlit affiche une erreur tronquee et
+# illisible : on la remplace ici par le nom du fichier a ajouter.
+try:
+    from core import (agents, budget, contexts, exporters, extraction,
+                      html_report, imaging, lexicons, llm, ml, qa, summarizer,
+                      translation, ui, utils, websearch)
+except ImportError as _exc:                                   # pragma: no cover
+    _nom = getattr(_exc, "name", "") or "inconnu"
+    _fichier = f"core/{_nom.split('.')[-1]}.py"
+    st.error(
+        f"**Module manquant : `{_nom}`**\n\n"
+        f"Le fichier **`{_fichier}`** est absent de l installation.\n\n"
+        f"Ajoute-le dans le dossier `core/`, a cote de `lexicons.py`, "
+        f"puis relance l application (*Manage app → Reboot* sur "
+        f"Streamlit Cloud).\n\n"
+        f"Message d origine : `{_exc}`")
+    st.stop()
+
+# Modules optionnels : leur absence ne doit couter qu un onglet, pas toute
+# l application.
+try:
+    from core import tab_transform
+    ERREUR_TRANSFORM = ""
+except Exception as _exc:                                     # pragma: no cover
+    tab_transform = None
+    ERREUR_TRANSFORM = f"{_exc.__class__.__name__}: {_exc}"
 
 # =====================================================================
 # Configuration
@@ -754,8 +778,31 @@ def _res_enrichir(res: dict) -> None:
         st.warning(res.get("message", "rien a enregistrer"), icon="⚠️")
 
 
+def module_absent(nom_module: str, fichier: str, detail: str,
+                  a_quoi_ca_sert: str) -> None:
+    """Message lisible quand un fichier du noyau n a pas ete televerse."""
+    st.error(f"**Fichier manquant : `{fichier}`**", icon="⚠️")
+    st.markdown(
+        f"{a_quoi_ca_sert}\n\n"
+        f"**Pour l activer :** ajoute le fichier **`{fichier}`** dans le dossier "
+        f"`core/` de ton depot, a cote de `lexicons.py`, puis redemarre "
+        f"l application (*Manage app → Reboot* sur Streamlit Cloud).\n\n"
+        f"Sur GitHub : entre dans le dossier `core/`, puis "
+        f"**Add file → Upload files** et depose le fichier.\n\n"
+        f"Le reste de la plateforme fonctionne normalement sans lui.")
+    st.caption(f"detail technique — {detail}")
+
+
 def tab_enrichir() -> None:
-    from core import lexicon_edit as led
+    try:
+        from core import lexicon_edit as led
+    except Exception as exc:
+        module_absent(
+            "core.lexicon_edit", "core/lexicon_edit.py",
+            f"{exc.__class__.__name__}: {exc}",
+            "Cet onglet permet d ajouter des termes et des metiers aux 57 CSV, "
+            "d importer un fichier, de creer un lexique et de sauvegarder la base.")
+        return
 
     st.caption("Tous les fichiers de la base sont modifiables ici. Chaque "
                "enregistrement cree d abord une copie de securite, puis recharge "
@@ -1329,9 +1376,20 @@ def main() -> None:
         "\U0001F4AC Dialogue", "\U0001F50E Veille", "\U0001F4E4 Exports",
         "\U0001F9F0 Transforme docs",
     ])
+    def _transform() -> None:
+        if tab_transform is None:
+            module_absent(
+                "core.tab_transform", "core/tab_transform.py", ERREUR_TRANSFORM,
+                "Cet onglet regroupe les 36 outils documentaires : fusionner, "
+                "convertir, compresser, proteger, caviarder, comparer. Il "
+                "s appuie aussi sur `core/doctools.py`, `core/pdfops.py`, "
+                "`core/convert.py`, `core/pdfintel.py` et `core/workflows.py`.")
+            return
+        tab_transform.render()
+
     renderers = [tab_accueil, tab_import, tab_agents, tab_analyse, tab_syntheses,
                  tab_traductions, tab_lexiques, tab_studio, tab_argus,
-                 tab_dialogue, tab_veille, tab_exports, tab_transform.render]
+                 tab_dialogue, tab_veille, tab_exports, _transform]
     for tab, fn in zip(tabs, renderers):
         with tab:
             fn()
