@@ -96,8 +96,12 @@ def table(rows: list[dict], note: str = "") -> None:
 # Panneau lateral
 # =====================================================================
 def sidebar() -> None:
-    st.sidebar.markdown("### ◆ SYNTHEA")
-    st.sidebar.caption("Synthese documentaire multi-agents — jusqu a 2000 pages")
+    st.sidebar.markdown(
+        "<div class='sx-logo'><div class='mark'></div>"
+        "<div class='word'><b>SYNTHEA</b><i>document intelligence</i></div></div>"
+        "<div class='sx-logo-sub'>Synthese documentaire multi-agents — "
+        "jusqu a 2000 pages</div>",
+        unsafe_allow_html=True)
 
     files = st.sidebar.file_uploader(
         "Documents a analyser",
@@ -134,9 +138,13 @@ def sidebar() -> None:
         max_sections = st.slider("Sections de synthese", 4, 24, 12)
         ocr = st.toggle("OCR des images et PDF scannes", value=True)
         caps = extraction.capabilities()
-        if ocr and not caps["ocr"]:
-            st.caption("⚠ OCR indisponible : installer pytesseract "
-                       "et le binaire tesseract-ocr (cf. packages.txt)")
+        diag = extraction.ocr_diagnostic()
+        if ocr and not diag["actif"]:
+            st.caption(f"\u26a0 {diag['message']}")
+            with st.popover("Comment l activer"):
+                st.markdown(f"**{diag['message']}**\n\n{diag['remede']}")
+        elif ocr:
+            st.caption(f"\u2714 {diag['message']}")
 
     with st.sidebar.expander("Restitution", expanded=True):
         labels = contexts.context_labels()
@@ -280,7 +288,8 @@ def tab_accueil() -> None:
             {"brique": "Word / PowerPoint / Excel",
              "etat": "oui" if (caps["docx"] and caps["pptx"] and caps["xlsx"]) else "partiel"},
             {"brique": "OCR images et scans",
-             "etat": "oui" if caps["ocr"] else "non (optionnel)"},
+             "etat": "oui" if extraction.ocr_diagnostic()["actif"]
+                     else "non \u2014 voir ci-dessous"},
             {"brique": "Apprentissage automatique",
              "etat": "scikit-learn" if ml.SKLEARN else "indisponible"},
             {"brique": "Traduction", "etat": translation.ENGINES[translation.best_engine()]},
@@ -292,6 +301,20 @@ def tab_accueil() -> None:
         st.caption("Aucune brique optionnelle n est necessaire : sans OCR, sans "
                    "internet et sans modele de langue, la plateforme reste "
                    "pleinement fonctionnelle.")
+        diag = extraction.ocr_diagnostic()
+        if not diag["actif"]:
+            with st.expander("Activer l OCR"):
+                st.markdown(
+                    f"**{diag['message']}**\n\n"
+                    "L OCR repose sur deux briques distinctes :\n\n"
+                    f"- le paquet Python `pytesseract` : "
+                    f"{'installe' if diag['module_python'] else 'absent'} ;\n"
+                    f"- le moteur `tesseract` (binaire systeme) : "
+                    f"{'installe' if diag['binaire'] else 'absent'}.\n\n"
+                    f"{diag['remede']}")
+        elif diag["langues"]:
+            st.caption(f"OCR : tesseract {diag['version']}, langues disponibles — "
+                       + ", ".join(diag["langues"][:12]))
 
     st.divider()
     st.markdown("#### Les seize agents")
@@ -665,8 +688,9 @@ def tab_lexiques() -> None:
          "argot, idiomes, registre courant", "brand"),
     ])
 
-    t1, t2, t3, t4, t5 = st.tabs(["Recherche", "Metiers", "Secteurs",
-                                  "Inventaire des CSV", "Dans ce document"])
+    t1, t2, t3, t4, t5, t6 = st.tabs(["Recherche", "Metiers", "Secteurs",
+                                      "Inventaire des CSV", "Dans ce document",
+                                      "➕ Enrichir la base"])
     with t1:
         c1, c2 = st.columns([3, 2])
         with c1:
@@ -712,6 +736,155 @@ def tab_lexiques() -> None:
                 for r in lex.get("jargon", [])], height=330)
             st.markdown("##### Sigles rencontres")
             df(lex.get("sigles", []))
+    with t6:
+        tab_enrichir()
+
+
+# =====================================================================
+# Onglet 7 bis - Enrichir la base de lexiques
+# =====================================================================
+def _res_enrichir(res: dict) -> None:
+    if not res:
+        return
+    if res.get("ok"):
+        st.success(res.get("message", "enregistre"), icon="✔")
+        if res.get("sauvegarde"):
+            st.caption(f"copie de securite : {res['sauvegarde']}")
+    else:
+        st.warning(res.get("message", "rien a enregistrer"), icon="⚠️")
+
+
+def tab_enrichir() -> None:
+    from core import lexicon_edit as led
+
+    st.caption("Tous les fichiers de la base sont modifiables ici. Chaque "
+               "enregistrement cree d abord une copie de securite, puis recharge "
+               "la base : les nouvelles entrees sont utilisables immediatement "
+               "par LEXIS, BABEL et la recherche.")
+
+    a, b, c, d_, e = st.tabs(["Un terme", "Un metier", "Importer un CSV",
+                              "Nouveau lexique", "Sauvegardes"])
+
+    # ---------------- un terme --------------------------------------
+    with a:
+        sect = led.fichiers_sectoriels()
+        c1, c2 = st.columns([2, 1])
+        with c1:
+            fich = st.selectbox("Lexique a enrichir", sect,
+                                format_func=lambda f: f.replace(".csv", "")
+                                .split("_lex_")[-1].replace("_", " "),
+                                key="enr_f")
+        with c2:
+            registre = st.selectbox("Registre",
+                                    ["technique", "courant", "familier", "sigle"],
+                                    key="enr_r")
+        terme = st.text_input("Terme en francais", "", key="enr_t",
+                              placeholder="ex. gel des avoirs")
+        definition = st.text_area("Definition", "", key="enr_d", height=80,
+                                  placeholder="une phrase, sans jargon inutile")
+        c1, c2, c3, c4 = st.columns(4)
+        with c1:
+            en = st.text_input("English", "", key="enr_en")
+        with c2:
+            es = st.text_input("Espanol", "", key="enr_es")
+        with c3:
+            pt = st.text_input("Portugues", "", key="enr_pt")
+        with c4:
+            ht = st.text_input("Kreyol", "", key="enr_ht")
+        if st.button("Ajouter ce terme", type="primary", key="enr_go",
+                     use_container_width=True):
+            if not terme.strip():
+                st.warning("Indique au moins le terme.", icon="⚠️")
+            else:
+                _res_enrichir(led.ajouter_terme(fich, terme, registre, definition,
+                                                en, es, pt, ht))
+        with st.expander("Contenu actuel de ce lexique"):
+            _, lignes = led.lire(fich)
+            df([{k: v for k, v in l.items() if k != "metiers"} for l in lignes])
+
+    # ---------------- un metier -------------------------------------
+    with b:
+        c1, c2 = st.columns(2)
+        with c1:
+            met = st.text_input("Intitule du metier", "", key="met_n",
+                                placeholder="ex. Analyste fraude moyens de paiement")
+            secteur = st.selectbox("Secteur", lexicons.secteurs(), key="met_s")
+        with c2:
+            famille = st.text_input("Famille", "", key="met_f",
+                                    placeholder="ex. Conformite")
+            mots = st.text_input("Mots-cles (separes par ;)", "", key="met_k")
+        c1, c2, c3, c4 = st.columns(4)
+        with c1:
+            men = st.text_input("English", "", key="met_en")
+        with c2:
+            mes = st.text_input("Espanol", "", key="met_es")
+        with c3:
+            mpt = st.text_input("Portugues", "", key="met_pt")
+        with c4:
+            mht = st.text_input("Kreyol", "", key="met_ht")
+        if st.button("Ajouter ce metier", type="primary", key="met_go",
+                     use_container_width=True):
+            if not met.strip():
+                st.warning("Indique l intitule du metier.", icon="⚠️")
+            else:
+                _res_enrichir(led.ajouter_metier(met, secteur, famille,
+                                                 men, mes, mpt, mht, mots))
+        st.caption(f"Le referentiel compte actuellement "
+                   f"{len(lexicons.metiers())} metiers.")
+
+    # ---------------- import CSV ------------------------------------
+    with c:
+        st.caption("Le fichier importe doit partager au moins une colonne avec "
+                   "le fichier cible. Les colonnes inconnues sont ignorees, les "
+                   "doublons aussi.")
+        cible = st.selectbox("Fichier cible", led.fichiers(), key="imp_c")
+        st.caption("colonnes attendues : " + ", ".join(led.colonnes(cible)))
+        remplacer = st.toggle("Mettre a jour les lignes deja presentes", False,
+                              key="imp_r")
+        up = st.file_uploader("Fichier CSV", type=["csv"], key="imp_f")
+        if up and st.button("Fusionner dans la base", type="primary", key="imp_go",
+                            use_container_width=True):
+            res = led.importer(cible, up.getvalue(), remplacer)
+            _res_enrichir(res)
+            if res.get("colonnes_ignorees"):
+                st.caption("colonnes ignorees : " + ", ".join(res["colonnes_ignorees"]))
+
+    # ---------------- nouveau lexique -------------------------------
+    with d_:
+        st.caption("Cree un lexique sectoriel vide, pret a recevoir tes termes. "
+                   "Il sera pris en compte par la detection de secteurs et par "
+                   "le glossaire multilingue.")
+        nom = st.text_input("Nom du secteur", "", key="new_s",
+                            placeholder="ex. assurance maritime")
+        if st.button("Creer le lexique", type="primary", key="new_go",
+                     use_container_width=True):
+            _res_enrichir(led.creer_lexique(nom))
+
+        st.divider()
+        st.markdown("##### Regenerer toute la base")
+        st.caption("Relance les scripts livres avec la plateforme. Utile apres "
+                   "avoir modifie les fichiers build_0*.py. Attention : les "
+                   "ajouts faits ici dans les fichiers de reference seront "
+                   "remplaces — une archive complete est conservee avant.")
+        if st.button("Regenerer les 57 fichiers", key="reg_go",
+                     use_container_width=True):
+            with st.spinner("regeneration en cours…"):
+                _res_enrichir(led.regenerer())
+
+    # ---------------- sauvegardes -----------------------------------
+    with e:
+        st.download_button("⬇ Telecharger toute la base (ZIP)",
+                           led.archiver(),
+                           f"synthea-lexiques-{utils.stamp()}.zip",
+                           "application/zip", use_container_width=True)
+        st.markdown("##### Copies de securite")
+        sv = led.sauvegardes()
+        df(sv)
+        if sv:
+            choix = st.selectbox("Restaurer une version",
+                                 [s["fichier"] for s in sv], key="res_c")
+            if st.button("Restaurer", key="res_go"):
+                _res_enrichir(led.restaurer(choix))
 
 
 # =====================================================================
