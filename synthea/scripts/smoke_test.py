@@ -166,7 +166,7 @@ def main() -> int:
     for n, d in files:
         print(f"      {n:26s} {len(d) / 1024:8.1f} Ko")
 
-    print("[2/6] execution du pipeline (11 agents)...")
+    print("[2/6] execution du pipeline (11 agents d analyse)...")
     orch = agents.Orchestrator({
         "profondeur": "standard",
         "contextes": ["pitch_entrepreneurial", "comite_direction",
