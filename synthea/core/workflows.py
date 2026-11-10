@@ -103,7 +103,7 @@ CATALOGUE: list[Outil] = [
     Outil("metadata", "Metadonnees", "Intelligence", "COLLATEUR", "pdf", "pdf",
           "Lit, corrige ou efface titre, auteur, sujet et mots-cles."),
     Outil("summarize", "Resumer (chaine SYNTHEA)", "Intelligence", "COLLATEUR",
-          "pdf", "md", "Branche les onze agents d analyse sur le PDF."),
+          "pdf", "md", "Branche les 11 agents d analyse sur le PDF."),
     Outil("translate", "Traduire le PDF", "Intelligence", "COLLATEUR", "pdf", "pdf",
           "Traduit page par page vers l une des cinq langues."),
 ]
