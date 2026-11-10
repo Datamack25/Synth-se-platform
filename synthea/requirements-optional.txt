@@ -1,9 +1,5 @@
 # Modules optionnels : SYNTHEA fonctionne sans eux (degradation annoncee dans l'UI)
 
-# OCR des images JPEG/PNG et des PDF scannes
-# Necessite aussi le binaire systeme tesseract (cf. packages.txt)
-pytesseract>=0.3.10
-
 # Traduction neuronale en ligne (Google/MyMemory) - complete le moteur glossaire hors ligne
 deep-translator>=1.11.4
 
