@@ -36,16 +36,35 @@ _DT_CODES = {"fr": "fr", "en": "en", "es": "es", "pt": "pt", "ht": "ht"}
 # ------------------------------------------------------------ disponibilite
 def engine_status() -> dict[str, dict]:
     dt = utils.has_module("deep_translator")
+    from . import websearch
+    reseau = websearch.online_available()
+    st_llm = llm.status()
+
+    if dt and reseau:
+        detail_dt = "module installe, reseau accessible"
+    elif dt:
+        detail_dt = ("module installe, mais aucun reseau detecte : BABEL bascule "
+                     "sur le glossaire hors ligne")
+    else:
+        detail_dt = ("paquet absent de l environnement — il figure pourtant dans "
+                     "requirements.txt : relance l installation des dependances")
+
+    if st_llm["actif"]:
+        detail_llm = f"cle API presente, modele {st_llm['modele']}"
+    elif st_llm["module_anthropic"]:
+        detail_llm = ("paquet installe, mais aucune cle : ajoute ANTHROPIC_API_KEY "
+                      "dans .streamlit/secrets.toml")
+    else:
+        detail_llm = ("paquet absent — il figure dans requirements.txt : "
+                      "relance l installation des dependances")
+
     return {
         "glossaire": {"disponible": True,
                       "detail": f"{len(lexicons.multilingue())} entrees pivots + "
-                                f"{len(lexicons.lexique_sectoriel())} termes metier"},
-        "deep_translator": {"disponible": dt,
-                            "detail": "module installe" if dt
-                                      else "pip install deep-translator"},
-        "llm": {"disponible": llm.available(),
-                "detail": "cle API presente" if llm.available()
-                          else "ANTHROPIC_API_KEY absente"},
+                                f"{len(lexicons.lexique_sectoriel())} termes metier, "
+                                f"sans reseau ni cle"},
+        "deep_translator": {"disponible": dt and reseau, "detail": detail_dt},
+        "llm": {"disponible": st_llm["actif"], "detail": detail_llm},
     }
 
 
