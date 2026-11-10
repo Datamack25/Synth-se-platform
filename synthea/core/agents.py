@@ -1,4 +1,4 @@
-"""SYNTHEA - les onze agents et leur orchestrateur.
+"""SYNTHEA - les seize agents et leur orchestrateur.
 
 Chaque agent a un role unique, des entrees et des sorties explicites. Ils se
 passent le relais dans un ordre fixe et inscrivent chacune de leurs actions dans
