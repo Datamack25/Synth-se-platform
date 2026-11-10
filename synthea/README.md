@@ -330,13 +330,13 @@ synthea/
 ### Test de bout en bout
 
 ```bash
-python scripts/smoke_test.py          # corpus mixte ~80 pages, 11 agents
+python scripts/smoke_test.py          # corpus mixte ~80 pages, 11 agents d'analyse
 python scripts/smoke_test.py --big    # test de charge ~740 pages
 python scripts/test_transform.py      # les 36 outils documentaires + dimensionnement
 ```
 
-Le script génère un corpus synthétique dans sept formats, exécute les onze
-agents, affiche le rapport ARGUS et produit tous les exports dans `exports/`.
+Le script génère un corpus synthétique dans sept formats, exécute les 11
+agents d'analyse, affiche le rapport ARGUS et produit tous les exports dans `exports/`.
 
 ---
 
