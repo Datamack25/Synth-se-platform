@@ -35,9 +35,14 @@ XlsxWriter>=3.2.0
 # --- Veille ciblee (degrade proprement sans reseau) ---
 requests>=2.31.0
 
+# --- OCR des images et des PDF scannes ---
+# Le paquet Python s installe seul ; le moteur de reconnaissance lui-meme est
+# un binaire systeme, declare dans packages.txt (tesseract-ocr). Les deux sont
+# necessaires : sans le binaire, pytesseract n a rien a piloter.
+pytesseract>=0.3.10
+
 # ---------------------------------------------------------------
 # OPTIONNEL : voir requirements-optional.txt
-#   - OCR des JPEG/PDF scannes  : pytesseract
 #   - Traduction neuronale      : deep-translator
 #   - Reformulation abstractive : anthropic
 # ---------------------------------------------------------------
