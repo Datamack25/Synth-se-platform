@@ -1,7 +1,9 @@
 """SYNTHEA - fragments d interface partages entre app.py et les onglets."""
 from __future__ import annotations
 
+import html
 import os
+import re
 
 import pandas as pd
 import streamlit as st
@@ -43,9 +45,79 @@ def gauge(pct: float) -> str:
             f"</div>")
 
 
-def df(rows: list[dict], height: int | None = None) -> None:
+# --------------------------------------------------------------- tableaux
+# st.dataframe dessine dans un canvas : aucune feuille de style ne peut en
+# changer les couleurs. En theme sombre, le tableau restait donc noir au milieu
+# d une page claire. Les tableaux courts sont rendus en HTML (classe .sx-table,
+# entierement stylable) ; seuls les grands tableaux gardent st.dataframe, qui
+# apporte le tri et le defilement.
+SEUIL_TABLEAU_HTML = 80
+
+_OUI = {"oui", "ok", "active", "actif", "conforme", "disponible", "vrai", "true"}
+_NON = {"non", "ko", "absent", "indisponible", "echec", "alerte", "faux", "false",
+        "desactivee", "desactive"}
+_MOYEN = {"partiel", "attention", "degrade", "optionnel", "hybride"}
+
+
+_NOMBRE = re.compile(r"-?[\d   .,]+\s?%?")
+
+
+def _cellule(valeur) -> tuple[str, str]:
+    """Retourne (texte echappe, classe css) pour une cellule."""
+    if valeur is None:
+        return "", ""
+    txt = str(valeur)
+    brut = txt.strip().lower()
+    classe = ""
+    if brut in _OUI:
+        classe = "ok"
+    elif brut in _NON or brut.startswith("non "):
+        classe = "no"
+    elif brut in _MOYEN:
+        classe = "mid"
+    elif _NOMBRE.fullmatch(txt.strip()):
+        classe = "num"
+    return html.escape(txt), classe
+
+
+def table(rows: list[dict], note: str = "", max_lignes: int = 400) -> None:
+    """Tableau HTML stylable, lisible quel que soit le theme de Streamlit."""
     if not rows:
         st.caption("aucune donnee")
+        return
+    colonnes: list[str] = []
+    for r in rows:
+        for k in r.keys():
+            if k not in colonnes:
+                colonnes.append(k)
+    corps = []
+    for r in rows[:max_lignes]:
+        tds = []
+        for c in colonnes:
+            txt, classe = _cellule(r.get(c, ""))
+            tds.append(f'<td class="{classe}">{txt}</td>' if classe else f"<td>{txt}</td>")
+        corps.append("<tr>" + "".join(tds) + "</tr>")
+    entete = "".join(f"<th>{html.escape(str(c))}</th>" for c in colonnes)
+    st.markdown(
+        f'<div class="sx-wrap"><table class="sx-table"><thead><tr>{entete}</tr>'
+        f'</thead><tbody>{"".join(corps)}</tbody></table></div>',
+        unsafe_allow_html=True)
+    reste = len(rows) - max_lignes
+    pied = note or ""
+    if reste > 0:
+        pied = (pied + " " if pied else "") + f"({reste} ligne(s) non affichee(s))"
+    if pied:
+        st.markdown(f"<div class='sx-note'>{html.escape(pied)}</div>",
+                    unsafe_allow_html=True)
+
+
+def df(rows: list[dict], height: int | None = None) -> None:
+    """Affiche un tableau : HTML si court, composant natif si long."""
+    if not rows:
+        st.caption("aucune donnee")
+        return
+    if len(rows) <= SEUIL_TABLEAU_HTML:
+        table(rows)
         return
     kw = {"height": height} if height else {}
     st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True, **kw)
