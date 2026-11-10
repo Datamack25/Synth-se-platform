@@ -1,0 +1,20 @@
+# Modules optionnels : SYNTHEA fonctionne sans eux (degradation annoncee dans l'UI)
+
+# OCR des images JPEG/PNG et des PDF scannes
+# Necessite aussi le binaire systeme tesseract (cf. packages.txt)
+pytesseract>=0.3.10
+
+# Traduction neuronale en ligne (Google/MyMemory) - complete le moteur glossaire hors ligne
+deep-translator>=1.11.4
+
+# Reformulation abstractive des syntheses (necessite ANTHROPIC_API_KEY dans les secrets)
+anthropic>=0.40.0
+
+# Embeddings semantiques locaux (plus precis que TF-IDF, ~90 Mo de modele)
+sentence-transformers>=3.0.0
+
+# Conversion PDF -> Word en mode « fidelite de mise en page ».
+# ATTENTION : pdf2docx installe PyMuPDF, publie sous licence AGPL-3.0.
+# Sans ce paquet, FORGE produit un Word reconstruit (texte, titres et tableaux
+# preserves, mise en page simplifiee) : rien n est bloque.
+pdf2docx>=0.5.8

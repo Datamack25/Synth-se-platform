@@ -1,0 +1,18 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+itineraire technique,technique,Suite des operations culturales sur une parcelle.,crop management sequence,itinerario tecnico,itinerario tecnico,itinerè teknik,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+assolement,technique,Repartition des cultures entre les parcelles.,crop allocation,distribucion de cultivos,distribuicao de culturas,asolman,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+rotation culturale,technique,Succession ordonnee des cultures dans le temps.,crop rotation,rotacion de cultivos,rotacao de culturas,rotasyon kilti,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+intrant,technique,"Produit apporte a la culture, engrais ou semence.",farm input,insumo,insumo,antran,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+ravageur,technique,Organisme nuisible attaquant la culture.,crop pest,plaga,praga,ravajè,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+auxiliaire de culture,technique,Organisme utile regulant les ravageurs.,beneficial organism,fauna auxiliar,inimigo natural,oksilyè kilti,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+rendement a l hectare,technique,Quantite recoltee par unite de surface.,yield per hectare,rendimiento por hectarea,rendimento por hectare,randman pa ekta,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+analyse de sol,technique,Mesure de la composition et de la fertilite du sol.,soil analysis,analisis de suelo,analise de solo,analiz tè,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+agroecologie,courant,Pratiques agricoles s appuyant sur les regulations naturelles.,agroecology,agroecologia,agroecologia,agwoekoloji,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+cheptel,technique,Ensemble des animaux d une exploitation.,livestock herd,cabana ganadera,efetivo pecuario,chèptèl,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+ration alimentaire,technique,Composition journaliere de l alimentation animale.,feed ration,racion alimentaria,racao alimentar,rasyon manje,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+prophylaxie,technique,Ensemble des mesures preventives sanitaires.,disease prevention,profilaxis,profilaxia,pwofilaksi,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+analyse des dangers,technique,Identification des risques sanitaires d un procede.,hazard analysis,analisis de peligros,analise de perigos,analiz danje,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+point critique,technique,Etape ou un controle est indispensable a la securite sanitaire.,critical control point,punto critico de control,ponto critico de controlo,pwen kritik,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+date limite de consommation,courant,Date au-dela de laquelle le produit devient dangereux.,use-by date,fecha de caducidad,data limite de consumo,dat limit konsomasyon,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+circuit court,courant,Vente directe ou avec un seul intermediaire.,short supply chain,circuito corto,circuito curto,sikwi kout,agriculture_agroalimentaire,MET086;MET087;MET088;MET089
+faire la saison,familier,Travailler pendant la periode de recolte.,to work the season,hacer la campana,fazer a campanha,fè sezon an,agriculture_agroalimentaire,MET086;MET087;MET088;MET089

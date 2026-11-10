@@ -1,0 +1,21 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+assiette imposable,technique,Base sur laquelle l impot est calcule.,taxable base,base imponible,base tributavel,asyèt enpozab,fiscalite,MET030
+abattement,technique,Reduction appliquee a la base avant calcul de l impot.,allowance,reduccion,abatimento,abatman,fiscalite,MET030
+credit d impot,technique,"Somme deduite de l impot du, parfois restituable.",tax credit,credito fiscal,credito fiscal,kredi enpo,fiscalite,MET030
+taxe sur la valeur ajoutee,technique,"Impot indirect sur la consommation, collecte par l entreprise.",value added tax,impuesto al valor anadido,imposto sobre valor acrescentado,taks sou valè ajoute,fiscalite,MET030
+autoliquidation,technique,Mecanisme ou le client acquitte lui-meme la taxe due.,reverse charge,inversion del sujeto pasivo,autoliquidacao,otolikidasyon,fiscalite,MET030
+liasse fiscale,technique,Ensemble des tableaux declaratifs transmis a l administration.,tax return pack,declaracion fiscal,declaracao fiscal,lyas fiskal,fiscalite,MET030
+prix de transfert,technique,Prix pratique entre entites d un meme groupe.,transfer pricing,precios de transferencia,precos de transferencia,pri transfè,fiscalite,MET030
+etablissement stable,technique,Presence suffisante pour rendre un benefice imposable localement.,permanent establishment,establecimiento permanente,estabelecimento estavel,etablisman stab,fiscalite,MET030
+convention fiscale,technique,Accord bilateral evitant les doubles impositions.,tax treaty,convenio fiscal,convencao fiscal,konvansyon fiskal,fiscalite,MET030
+redressement,technique,Rectification de l impot apres controle.,tax reassessment,liquidacion complementaria,autuacao fiscal,redresman,fiscalite,MET030
+abus de droit,technique,Montage juridique a but exclusivement fiscal.,abuse of law,abuso de derecho,abuso de direito,abi de dwa,fiscalite,MET030
+optimisation fiscale,courant,Choix legaux reduisant la charge d impot.,tax planning,planificacion fiscal,planeamento fiscal,optimizasyon fiskal,fiscalite,MET030
+evasion fiscale,courant,"Transfert de matiere imposable hors du pays, a la limite de la legalite.",tax avoidance,evasion fiscal,evasao fiscal,evazyon fiskal,fiscalite,MET030
+fraude fiscale,technique,Soustraction volontaire et illegale a l impot.,tax fraud,fraude fiscal,fraude fiscal,fwòd fiskal,fiscalite,MET030
+exit tax,technique,Imposition des plus-values latentes lors d un depart a l etranger.,exit tax,impuesto de salida,exit tax,egzit taks,fiscalite,MET030
+integration fiscale,technique,Regime consolidant les resultats d un groupe.,tax consolidation,consolidacion fiscal,consolidacao fiscal,entegrasyon fiskal,fiscalite,MET030
+report deficitaire,technique,Deficit imputable sur les benefices futurs.,loss carry-forward,base negativa,prejuizo a reportar,repò defisitè,fiscalite,MET030
+retenue a la source,technique,Prelevement opere par le payeur avant versement.,withholding tax,retencion en la fuente,retencao na fonte,retni nan sous,fiscalite,MET030
+domiciliation fiscale,technique,Rattachement d un contribuable a un Etat.,tax residence,residencia fiscal,residencia fiscal,domisilyasyon fiskal,fiscalite,MET030
+faire un rescrit,familier,Demander a l administration sa position ecrite sur un cas.,to request a ruling,pedir una consulta vinculante,pedir uma consulta previa,mande yon rèskri,fiscalite,MET030

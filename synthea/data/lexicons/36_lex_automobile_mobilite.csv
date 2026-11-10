@@ -1,0 +1,16 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+diagnostic electronique,technique,Lecture des defauts memorises par les calculateurs.,electronic diagnostics,diagnostico electronico,diagnostico eletronico,dyagnostik elektwonik,automobile_mobilite,MET129
+courroie de distribution,technique,Organe synchronisant vilebrequin et arbre a cames.,timing belt,correa de distribucion,correia de distribuicao,kouwa distribisyon,automobile_mobilite,MET129
+revision periodique,courant,Entretien programme selon le kilometrage.,scheduled service,revision periodica,revisao periodica,revizyon peryodik,automobile_mobilite,MET129
+controle technique,courant,Verification obligatoire de l etat du vehicule.,roadworthiness test,inspeccion tecnica,inspecao periodica,kontwòl teknik,automobile_mobilite,MET129
+couple moteur,technique,Force de rotation delivree par le moteur.,engine torque,par motor,binario do motor,koup motè,automobile_mobilite,MET129
+consommation mixte,technique,Moyenne normalisee de consommation de carburant.,combined consumption,consumo mixto,consumo combinado,konsomasyon mikst,automobile_mobilite,MET129
+autonomie,courant,Distance parcourable avec une charge ou un plein.,range,autonomia,autonomia,otonomi,automobile_mobilite,MET129
+borne de recharge,courant,Equipement delivrant de l energie a un vehicule electrique.,charging point,punto de recarga,ponto de carregamento,bòn rechaj,automobile_mobilite,MET129
+recharge rapide,courant,Charge a forte puissance en un temps court.,fast charging,carga rapida,carregamento rapido,rechaj rapid,automobile_mobilite,MET129
+aide a la conduite,technique,Systeme assistant le conducteur dans sa tache.,driver assistance,ayuda a la conduccion,assistencia a conducao,èd kondwit,automobile_mobilite,MET129
+valeur residuelle,technique,Valeur estimee du vehicule en fin de contrat.,residual value,valor residual,valor residual,valè rezidyèl,automobile_mobilite,MET129
+location longue duree,courant,Mise a disposition d un vehicule contre loyer mensuel.,long-term lease,renting,aluguer de longa duracao,lokasyon long dire,automobile_mobilite,MET129
+mobilite partagee,courant,Usage collectif de vehicules plutot que propriete.,shared mobility,movilidad compartida,mobilidade partilhada,mobilite pataje,automobile_mobilite,MET129
+piece d occasion reconditionnee,courant,Composant reutilise apres remise en etat controlee.,refurbished part,pieza reacondicionada,peca recondicionada,pyès rekondisyone,automobile_mobilite,MET129
+tomber en panne,familier,Cesser de fonctionner en cours de route.,to break down,averiarse,avariar,tonbe an pàn,automobile_mobilite,MET129

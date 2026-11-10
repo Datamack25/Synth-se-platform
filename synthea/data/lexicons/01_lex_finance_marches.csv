@@ -1,0 +1,23 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+actif sous-jacent,technique,Instrument de reference dont depend la valeur d un derive.,underlying asset,activo subyacente,ativo subjacente,aktif ki anba a,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+valorisation,technique,Estimation de la valeur economique d un actif ou d une societe.,valuation,valoracion,avaliacao,valorizasyon,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+flux de tresorerie actualise,technique,Methode qui ramene les flux futurs a leur valeur d aujourd hui.,discounted cash flow,flujo de caja descontado,fluxo de caixa descontado,flo lajan aktyalize,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+prime de risque,technique,Rendement exige en plus du taux sans risque pour accepter un risque.,risk premium,prima de riesgo,premio de risco,prim risk,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+volatilite implicite,technique,Volatilite deduite du prix de marche d une option.,implied volatility,volatilidad implicita,volatilidade implicita,volatilite enplisit,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+carnet d ordres,technique,Liste des ordres d achat et de vente en attente sur un titre.,order book,libro de ordenes,livro de ofertas,liv lòd,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+spread,courant,Ecart entre le prix d achat et le prix de vente.,spread,diferencial,spread,ekaman pri,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+liquidite,technique,Capacite a acheter ou vendre sans deformer le prix.,liquidity,liquidez,liquidez,likidite,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+effet de levier,technique,Amplification du resultat par recours a l endettement.,leverage,apalancamiento,alavancagem,efè levye,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+couverture,technique,Operation destinee a neutraliser un risque de marche.,hedging,cobertura,cobertura,pwoteksyon,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+appel de marge,technique,Demande de versement complementaire pour couvrir une perte latente.,margin call,ajuste de margen,chamada de margem,apèl marj,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+valeur en risque,technique,Perte maximale attendue sur un horizon et un seuil de confiance.,value at risk,valor en riesgo,valor em risco,valè an risk,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+test de resistance,technique,Simulation des pertes sous un scenario extreme mais plausible.,stress test,prueba de estres,teste de estresse,tès rezistans,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+allocation d actifs,technique,Repartition du portefeuille entre classes d actifs.,asset allocation,asignacion de activos,alocacao de ativos,repatisyon aktif,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+indice de reference,technique,Panier servant a mesurer la performance d un portefeuille.,benchmark,indice de referencia,indice de referencia,endis referans,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+ecart de suivi,technique,Volatilite de l ecart de performance avec l indice.,tracking error,error de seguimiento,erro de replicacao,ekaman swivi,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+rendement,courant,"Gain rapporte au capital engage, exprime en pourcentage.",yield,rendimiento,rendimento,randman,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+echeance,courant,Date a laquelle une operation ou un titre arrive a terme.,maturity,vencimiento,vencimento,echeyans,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+adossement,technique,Mise en correspondance d un engagement et de sa ressource.,matching,casamiento,casamento,adosman,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+prise de position,courant,Engagement directionnel sur un marche.,position taking,toma de posicion,tomada de posicao,pran pozisyon,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+coupe-circuit,familier,Suspension automatique de cotation en cas de variation extreme.,circuit breaker,cortacircuito,circuit breaker,koupe sikwi,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007
+se faire sortir,familier,Etre liquide de force par un appel de marge ou un stop.,to get stopped out,ser liquidado,ser estopado,pran soti,finance_marches,MET001;MET002;MET003;MET004;MET005;MET006;MET007

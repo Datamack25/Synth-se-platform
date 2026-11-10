@@ -1,0 +1,22 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+prime,technique,Somme versee par l assure en contrepartie de la garantie.,premium,prima,premio,prim,assurance,MET020;MET021;MET022;MET023
+franchise,technique,Part du sinistre restant a la charge de l assure.,deductible,franquicia,franquia,franchiz,assurance,MET020;MET021;MET022;MET023
+plafond de garantie,technique,Montant maximal d indemnisation prevu au contrat.,coverage limit,limite de cobertura,limite de cobertura,plafon garanti,assurance,MET020;MET021;MET022;MET023
+exclusion,technique,Situation expressement non couverte par le contrat.,exclusion,exclusion,exclusao,ekskizyon,assurance,MET020;MET021;MET022;MET023
+sinistre,courant,Evenement declenchant la garantie.,claim,siniestro,sinistro,sinistr,assurance,MET020;MET021;MET022;MET023
+declaration de sinistre,courant,Information de l assureur par l assure d un evenement couvert.,claim notification,declaracion de siniestro,aviso de sinistro,deklarasyon sinistr,assurance,MET020;MET021;MET022;MET023
+expertise,technique,Evaluation technique des dommages par un professionnel mandate.,loss adjustment,peritaje,pericia,ekspètiz,assurance,MET020;MET021;MET022;MET023
+provision technique,technique,Reserve constituee pour couvrir les engagements futurs.,technical provision,provision tecnica,provisao tecnica,pwovizyon teknik,assurance,MET020;MET021;MET022;MET023
+ratio combine,technique,Somme du ratio de sinistralite et du ratio de frais.,combined ratio,ratio combinado,indice combinado,rapò konbine,assurance,MET020;MET021;MET022;MET023
+sinistralite,technique,Rapport des sinistres aux primes acquises.,loss ratio,siniestralidad,sinistralidade,sinistralite,assurance,MET020;MET021;MET022;MET023
+risque aggrave,technique,Profil dont la probabilite de sinistre est superieure a la moyenne.,substandard risk,riesgo agravado,risco agravado,risk agrave,assurance,MET020;MET021;MET022;MET023
+selection adverse,technique,Attraction preferentielle des mauvais risques par une tarification uniforme.,adverse selection,seleccion adversa,selecao adversa,seleksyon advès,assurance,MET020;MET021;MET022;MET023
+alea moral,technique,Relachement du comportement de prudence du fait d etre assure.,moral hazard,riesgo moral,risco moral,alea moral,assurance,MET020;MET021;MET022;MET023
+reassurance,technique,Transfert d une partie du risque a un autre assureur.,reinsurance,reaseguro,resseguro,reasirans,assurance,MET020;MET021;MET022;MET023
+subrogation,technique,Substitution de l assureur a l assure pour agir contre le responsable.,subrogation,subrogacion,subrogacao,sibwogasyon,assurance,MET020;MET021;MET022;MET023
+resiliation,courant,Fin anticipee du contrat a l initiative d une partie.,cancellation,rescision,rescisao,rezilyasyon,assurance,MET020;MET021;MET022;MET023
+avenant,technique,Document modifiant un contrat en cours.,endorsement,suplemento,aditivo,avnan,assurance,MET020;MET021;MET022;MET023
+delai de carence,technique,Periode initiale pendant laquelle la garantie ne joue pas.,waiting period,periodo de carencia,periodo de carencia,delè karans,assurance,MET020;MET021;MET022;MET023
+bonus-malus,courant,Coefficient de reduction ou de majoration lie a l historique.,no-claims discount,bonificacion por no siniestralidad,bonus-malus,bonis-malis,assurance,MET020;MET021;MET022;MET023
+indemnisation,courant,Versement destine a reparer le prejudice subi.,indemnity payment,indemnizacion,indenizacao,endamnizasyon,assurance,MET020;MET021;MET022;MET023
+passer en expertise,familier,Faire examiner le dommage par un expert avant indemnisation.,to send to adjustment,pasar a peritaje,ir a pericia,pase nan ekspètiz,assurance,MET020;MET021;MET022;MET023

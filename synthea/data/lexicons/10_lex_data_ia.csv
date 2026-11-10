@@ -1,0 +1,25 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+jeu de donnees,technique,Ensemble structure d observations exploitables.,dataset,conjunto de datos,conjunto de dados,seri done,data_ia,MET045;MET046;MET047;MET048
+variable explicative,technique,Donnee utilisee pour predire la cible.,feature,variable predictora,variavel explicativa,varyab eksplikatif,data_ia,MET045;MET046;MET047;MET048
+variable cible,technique,Grandeur que le modele cherche a predire.,target variable,variable objetivo,variavel alvo,varyab sib,data_ia,MET045;MET046;MET047;MET048
+apprentissage supervise,technique,Entrainement a partir d exemples etiquetes.,supervised learning,aprendizaje supervisado,aprendizagem supervisionada,aprantisaj sipèvize,data_ia,MET045;MET046;MET047;MET048
+apprentissage non supervise,technique,Decouverte de structures sans etiquettes.,unsupervised learning,aprendizaje no supervisado,aprendizagem nao supervisionada,aprantisaj san sipèvizyon,data_ia,MET045;MET046;MET047;MET048
+surapprentissage,technique,Modele qui memorise le bruit et generalise mal.,overfitting,sobreajuste,sobreajuste,siraprantisaj,data_ia,MET045;MET046;MET047;MET048
+sous-apprentissage,technique,Modele trop simple pour capter la structure des donnees.,underfitting,subajuste,subajuste,soutaprantisaj,data_ia,MET045;MET046;MET047;MET048
+jeu de validation,technique,Echantillon servant a regler les hyperparametres.,validation set,conjunto de validacion,conjunto de validacao,seri validasyon,data_ia,MET045;MET046;MET047;MET048
+validation croisee,technique,Decoupage repete pour estimer la performance reelle.,cross-validation,validacion cruzada,validacao cruzada,validasyon kwaze,data_ia,MET045;MET046;MET047;MET048
+matrice de confusion,technique,Tableau croisant predictions et realite.,confusion matrix,matriz de confusion,matriz de confusao,matris konfizyon,data_ia,MET045;MET046;MET047;MET048
+precision,technique,Part de predictions positives qui sont correctes.,precision,precision,precisao,presizyon,data_ia,MET045;MET046;MET047;MET048
+rappel,technique,Part des cas positifs effectivement detectes.,recall,exhaustividad,revocacao,rapèl,data_ia,MET045;MET046;MET047;MET048
+derive du modele,technique,Degradation de performance due au changement des donnees.,model drift,deriva del modelo,desvio do modelo,deriv modèl,data_ia,MET045;MET046;MET047;MET048
+biais algorithmique,courant,Traitement systematiquement defavorable a un groupe.,algorithmic bias,sesgo algoritmico,vies algoritmico,biyè algoritmik,data_ia,MET045;MET046;MET047;MET048
+explicabilite,technique,Capacite a justifier une decision du modele.,explainability,explicabilidad,explicabilidade,eksplikabilite,data_ia,MET045;MET046;MET047;MET048
+vectorisation,technique,Transformation d un texte en representation numerique.,vectorisation,vectorizacion,vetorizacao,vektorizasyon,data_ia,MET045;MET046;MET047;MET048
+plongement lexical,technique,Representation dense d un mot dans un espace vectoriel.,word embedding,incrustacion de palabras,embedding de palavras,plonjman leksikal,data_ia,MET045;MET046;MET047;MET048
+similarite cosinus,technique,"Mesure d angle entre deux vecteurs, entre 0 et 1.",cosine similarity,similitud del coseno,similaridade do cosseno,similarite kosinis,data_ia,MET045;MET046;MET047;MET048
+regroupement,technique,Formation automatique de groupes homogenes.,clustering,agrupamiento,agrupamento,regwoupman,data_ia,MET045;MET046;MET047;MET048
+reduction de dimension,technique,Compression des variables en conservant l information utile.,dimensionality reduction,reduccion de dimensionalidad,reducao de dimensionalidade,rediksyon dimansyon,data_ia,MET045;MET046;MET047;MET048
+chaine de traitement,technique,Suite ordonnee d etapes de transformation des donnees.,pipeline,flujo de procesamiento,pipeline,chèn tretman,data_ia,MET045;MET046;MET047;MET048
+entrepot de donnees,technique,Base centralisee organisee pour l analyse.,data warehouse,almacen de datos,armazem de dados,depo done,data_ia,MET045;MET046;MET047;MET048
+donnee de mauvaise qualite,courant,"Information incomplete, obsolete ou incoherente.",dirty data,dato sucio,dado sujo,done ki pa bon,data_ia,MET045;MET046;MET047;MET048
+faire tourner un modele,familier,Lancer l entrainement ou l inference.,to run a model,ejecutar un modelo,rodar um modelo,fè yon modèl vire,data_ia,MET045;MET046;MET047;MET048

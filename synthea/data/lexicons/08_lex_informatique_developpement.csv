@@ -1,0 +1,23 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+interface de programmation,technique,Contrat technique permettant a deux logiciels de dialoguer.,application programming interface,interfaz de programacion,interface de programacao,entèfas pwogramasyon,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+point d entree,technique,Adresse exposee par un service pour recevoir des appels.,endpoint,endpoint,endpoint,pwen antre,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+depot de code,technique,Espace versionne contenant le code source.,repository,repositorio,repositorio,depo kòd,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+branche,technique,Ligne de developpement parallele dans le depot.,branch,rama,ramo,branch,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+fusion,technique,Integration d une branche dans une autre.,merge,fusion,merge,fizyon,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+revue de code,technique,Relecture par un pair avant integration.,code review,revision de codigo,revisao de codigo,revi kòd,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+dette technique,courant,Cout futur des raccourcis pris dans la conception.,technical debt,deuda tecnica,divida tecnica,dèt teknik,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+refonte,courant,Reecriture profonde d un composant existant.,refactoring,refactorizacion,refatoracao,refonn,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+chaine d integration,technique,Automatisation des tests et des livraisons.,CI/CD pipeline,pipeline de integracion,pipeline de integracao,chèn entegrasyon,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+conteneur,technique,Paquet isolant une application et ses dependances.,container,contenedor,contentor,kontenè,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+mise a l echelle,technique,Capacite a absorber une charge croissante.,scalability,escalabilidad,escalabilidade,mete nan echèl,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+recette fonctionnelle,technique,Validation du logiciel par le metier avant mise en production.,user acceptance testing,pruebas de aceptacion,testes de aceitacao,resèt fonksyonèl,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+non-regression,technique,Verification que les evolutions n ont rien casse.,regression testing,pruebas de regresion,testes de regressao,non-regresyon,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+anomalie bloquante,technique,Defaut empechant l usage du service.,blocking bug,error bloqueante,erro bloqueante,anomali ki bloke,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+recit utilisateur,technique,Expression d un besoin du point de vue de l utilisateur.,user story,historia de usuario,historia de usuario,istwa itilizatè,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+carnet de commandes produit,technique,Liste ordonnee des travaux a realiser.,product backlog,pila de producto,backlog do produto,kanè kòmann pwodwi,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+iteration,technique,Cycle court de developpement livrant de la valeur.,sprint,sprint,sprint,iterasyon,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+definition du fini,technique,Criteres a remplir pour considerer une tache achevee.,definition of done,definicion de terminado,definicao de pronto,definisyon fini,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+mise en production,courant,Deploiement de la version destinee aux utilisateurs.,release to production,paso a produccion,entrada em producao,mete an pwodiksyon,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+retour arriere,technique,Retour a la version precedente apres incident.,rollback,reversion,rollback,retounen dèyè,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+ca passe en prod,familier,La version est deployee pour les utilisateurs reels.,it ships to prod,pasa a produccion,vai para producao,l ap pase an pwòd,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041
+rustine,familier,Correctif rapide pose sans traiter la cause.,quick fix,parche,remendo,patch rapid,informatique_developpement,MET035;MET036;MET037;MET038;MET039;MET040;MET041

@@ -1,0 +1,17 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+deliberation,technique,Decision formelle prise par une assemblee locale.,council resolution,acuerdo plenario,deliberacao,deliberasyon,administration_publique,MET117;MET118;MET119
+arrete,technique,Decision executoire prise par une autorite administrative.,administrative order,resolucion,despacho,arete,administration_publique,MET117;MET118;MET119
+marche public,technique,Contrat d achat passe par une personne publique.,public procurement,contrato publico,contrato publico,mache piblik,administration_publique,MET117;MET118;MET119
+subvention,courant,Aide financiere accordee a un tiers pour un projet.,grant,subvencion,subsidio,sibvansyon,administration_publique,MET117;MET118;MET119
+service public,courant,Activite d interet general assuree sous controle public.,public service,servicio publico,servico publico,sèvis piblik,administration_publique,MET117;MET118;MET119
+interet general,technique,Finalite collective justifiant l action publique.,public interest,interes general,interesse publico,enterè jeneral,administration_publique,MET117;MET118;MET119
+note de synthese,technique,Document court presentant un dossier et des options.,briefing note,nota de sintesis,nota de sintese,nòt sentèz,administration_publique,MET117;MET118;MET119
+arbitrage,courant,Choix tranche entre plusieurs options par l autorite.,decision arbitration,arbitraje,arbitragem,abitraj,administration_publique,MET117;MET118;MET119
+instruction du dossier,technique,Examen administratif prealable a la decision.,case processing,instruccion del expediente,instrucao do processo,enstriksyon dosye,administration_publique,MET117;MET118;MET119
+recours gracieux,technique,Demande de reexamen adressee a l autorite elle-meme.,administrative appeal,recurso de reposicion,reclamacao graciosa,rekou grasye,administration_publique,MET117;MET118;MET119
+transparence,courant,Acces du public aux informations administratives.,transparency,transparencia,transparencia,transparans,administration_publique,MET117;MET118;MET119
+redevabilite,technique,Obligation de rendre compte de son action.,accountability,rendicion de cuentas,responsabilizacao,redevabilite,administration_publique,MET117;MET118;MET119
+evaluation des politiques publiques,technique,Mesure des effets reels d une politique.,policy evaluation,evaluacion de politicas,avaliacao de politicas,evalyasyon politik piblik,administration_publique,MET117;MET118;MET119
+etat civil,courant,"Service enregistrant naissances, mariages et deces.",civil registry,registro civil,registo civil,eta sivil,administration_publique,MET117;MET118;MET119
+continuite du service,technique,Principe de fonctionnement sans interruption.,service continuity,continuidad del servicio,continuidade do servico,kontinwite sèvis,administration_publique,MET117;MET118;MET119
+monter un dossier,familier,Constituer l ensemble des pieces d une demande.,to build a case file,preparar un expediente,montar um processo,monte yon dosye,administration_publique,MET117;MET118;MET119

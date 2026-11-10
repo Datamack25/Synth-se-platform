@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------
+# SYNTHEA - Document Intelligence Suite
+# Noyau indispensable (fonctionne 100% hors ligne)
+# ---------------------------------------------------------------
+streamlit>=1.40.0
+pandas>=2.1.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+scipy>=1.11.0
+
+# --- Boite a outils documentaire (onglet Transforme docs) ---
+pikepdf>=8.15.0
+pypdfium2>=4.30.0
+
+# --- Extraction multi-format ---
+pypdf>=4.2.0
+pdfplumber>=0.11.0
+python-docx>=1.1.0
+python-pptx>=0.6.23
+openpyxl>=3.1.2
+beautifulsoup4>=4.12.0
+lxml>=5.1.0
+html5lib>=1.1
+chardet>=5.2.0
+
+# --- Visuels / studio ---
+Pillow>=10.2.0
+matplotlib>=3.8.0
+wordcloud>=1.9.3
+
+# --- Exports ---
+reportlab>=4.1.0
+XlsxWriter>=3.2.0
+
+# --- Veille ciblee (degrade proprement sans reseau) ---
+requests>=2.31.0
+
+# ---------------------------------------------------------------
+# OPTIONNEL : voir requirements-optional.txt
+#   - OCR des JPEG/PDF scannes  : pytesseract
+#   - Traduction neuronale      : deep-translator
+#   - Reformulation abstractive : anthropic
+# ---------------------------------------------------------------

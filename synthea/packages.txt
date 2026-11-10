@@ -1,0 +1,14 @@
+tesseract-ocr
+tesseract-ocr-fra
+tesseract-ocr-eng
+tesseract-ocr-spa
+tesseract-ocr-por
+poppler-utils
+libgl1
+# --- optionnel, pour la fidelite maximale de l onglet Transforme docs ---
+# libreoffice   : conversions Word/PowerPoint/Excel <-> PDF a l identique (~400 Mo)
+# ghostscript   : conversion PDF/A certifiee et compression agressive
+# qpdf          : reparation de PDF endommages
+libreoffice
+ghostscript
+qpdf

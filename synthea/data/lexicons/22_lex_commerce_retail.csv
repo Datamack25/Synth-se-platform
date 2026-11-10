@@ -1,0 +1,17 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+lineaire,technique,Longueur de presentation accordee a un produit en rayon.,shelf space,lineal,linear,lineyè,commerce_retail,MET090;MET091;MET092;MET093
+facing,technique,Nombre de faces visibles d un produit en rayon.,facing,frente de lineal,frente de prateleira,fasing,commerce_retail,MET090;MET091;MET092;MET093
+demarque inconnue,technique,"Perte de stock sans cause identifiee, vol compris.",unknown shrinkage,desconocido,quebra desconhecida,demak enkoni,commerce_retail,MET090;MET091;MET092;MET093
+casse,courant,"Marchandise detruite ou perimee, retiree de la vente.",wastage,merma,quebra,kas,commerce_retail,MET090;MET091;MET092;MET093
+panier moyen,technique,Montant moyen depense par transaction.,average basket,ticket medio,ticket medio,panyen mwayen,commerce_retail,MET090;MET091;MET092;MET093
+taux de conversion,technique,Part des visiteurs qui achetent.,conversion rate,tasa de conversion,taxa de conversao,to konvèsyon,commerce_retail,MET090;MET091;MET092;MET093
+marge arriere,technique,Remunerations obtenues du fournisseur hors prix d achat.,back margin,margen trasero,margem traseira,marj dèyè,commerce_retail,MET090;MET091;MET092;MET093
+appel d offres,technique,Procedure de mise en concurrence des fournisseurs.,tender,licitacion,concurso,apèl dòf,commerce_retail,MET090;MET091;MET092;MET093
+referencement fournisseur,technique,Admission d un fournisseur au panel autorise.,supplier listing,homologacion de proveedor,homologacao de fornecedor,referansman founisè,commerce_retail,MET090;MET091;MET092;MET093
+rupture en rayon,courant,Absence du produit a l emplacement prevu.,out of stock,rotura de stock,rutura de stock,ripti nan reyon,commerce_retail,MET090;MET091;MET092;MET093
+tete de gondole,courant,Emplacement promotionnel en bout de rayon.,end cap,cabecera de gondola,ponta de gondola,tèt gondòl,commerce_retail,MET090;MET091;MET092;MET093
+argumentaire de vente,courant,Discours structure justifiant l achat.,sales pitch,argumentario,argumentario,agimantè vant,commerce_retail,MET090;MET091;MET092;MET093
+service apres-vente,courant,Prise en charge du produit apres l achat.,after-sales service,servicio posventa,servico pos-venda,sèvis apre vant,commerce_retail,MET090;MET091;MET092;MET093
+fiche produit,courant,Description commerciale et technique d un article en ligne.,product page,ficha de producto,ficha de produto,fich pwodwi,commerce_retail,MET090;MET091;MET092;MET093
+abandon de panier,technique,Visite se terminant sans finaliser la commande.,cart abandonment,abandono de carrito,abandono de carrinho,abandon panyen,commerce_retail,MET090;MET091;MET092;MET093
+faire du chiffre,familier,Realiser du volume de ventes.,to drive sales,hacer caja,fazer caixa,fè chif,commerce_retail,MET090;MET091;MET092;MET093

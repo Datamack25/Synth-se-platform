@@ -1,0 +1,18 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+principe actif,technique,Substance responsable de l effet therapeutique.,active ingredient,principio activo,principio ativo,prensip aktif,pharmacie_biotech,MET056;MET057;MET058;MET059
+excipient,technique,Substance inerte servant de support au principe actif.,excipient,excipiente,excipiente,eksipyan,pharmacie_biotech,MET056;MET057;MET058;MET059
+forme galenique,technique,"Presentation du medicament, comprime, sirop ou injectable.",dosage form,forma galenica,forma farmaceutica,fòm galenik,pharmacie_biotech,MET056;MET057;MET058;MET059
+biodisponibilite,technique,Fraction de la dose atteignant la circulation generale.,bioavailability,biodisponibilidad,biodisponibilidade,biyodisponibilite,pharmacie_biotech,MET056;MET057;MET058;MET059
+interaction medicamenteuse,technique,Modification d effet due a l association de traitements.,drug interaction,interaccion farmacologica,interacao medicamentosa,entèraksyon medikaman,pharmacie_biotech,MET056;MET057;MET058;MET059
+essai clinique,technique,Etude encadree evaluant un traitement chez l humain.,clinical trial,ensayo clinico,ensaio clinico,esè klinik,pharmacie_biotech,MET056;MET057;MET058;MET059
+groupe temoin,technique,Groupe de comparaison ne recevant pas le traitement teste.,control group,grupo de control,grupo de controlo,gwoup temwen,pharmacie_biotech,MET056;MET057;MET058;MET059
+insu,technique,Dispositif empechant de savoir qui recoit quoi.,blinding,cegamiento,cegamento,ensi,pharmacie_biotech,MET056;MET057;MET058;MET059
+pharmacovigilance,technique,Surveillance des effets des medicaments apres commercialisation.,pharmacovigilance,farmacovigilancia,farmacovigilancia,famakovijilans,pharmacie_biotech,MET056;MET057;MET058;MET059
+autorisation de mise sur le marche,technique,Decision permettant la commercialisation d un medicament.,marketing authorisation,autorizacion de comercializacion,autorizacao de introducao no mercado,otorizasyon mete sou mache,pharmacie_biotech,MET056;MET057;MET058;MET059
+bonnes pratiques de fabrication,technique,Referentiel qualite obligatoire en production pharmaceutique.,good manufacturing practice,normas de correcta fabricacion,boas praticas de fabrico,bon pratik fabrikasyon,pharmacie_biotech,MET056;MET057;MET058;MET059
+lot de production,technique,Quantite fabriquee dans des conditions homogenes.,production batch,lote de produccion,lote de producao,lo pwodiksyon,pharmacie_biotech,MET056;MET057;MET058;MET059
+tracabilite,technique,Capacite a reconstituer l historique d un produit.,traceability,trazabilidad,rastreabilidade,trasabilite,pharmacie_biotech,MET056;MET057;MET058;MET059
+date de peremption,courant,Limite au-dela de laquelle le produit ne doit plus etre utilise.,expiry date,fecha de caducidad,data de validade,dat ekspirasyon,pharmacie_biotech,MET056;MET057;MET058;MET059
+chaine du froid,technique,Maintien continu d une temperature basse jusqu a l usage.,cold chain,cadena de frio,cadeia de frio,chèn fredi,pharmacie_biotech,MET056;MET057;MET058;MET059
+generique,courant,Copie d un medicament dont le brevet est expire.,generic drug,medicamento generico,medicamento generico,jenerik,pharmacie_biotech,MET056;MET057;MET058;MET059
+rupture de stock,courant,Indisponibilite temporaire d un medicament.,stock shortage,desabastecimiento,falta de stock,mank nan stòk,pharmacie_biotech,MET056;MET057;MET058;MET059

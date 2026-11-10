@@ -1,0 +1,17 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+taux d occupation,technique,Part des chambres vendues sur les chambres disponibles.,occupancy rate,tasa de ocupacion,taxa de ocupacao,to okipasyon,hotellerie_restauration_tourisme,MET106;MET107;MET108
+prix moyen par chambre,technique,Recette moyenne par chambre louee.,average daily rate,precio medio por habitacion,preco medio por quarto,pri mwayen pa chanm,hotellerie_restauration_tourisme,MET106;MET107;MET108
+revenu par chambre disponible,technique,Indicateur combinant occupation et prix moyen.,revenue per available room,ingreso por habitacion disponible,receita por quarto disponivel,revni pa chanm disponib,hotellerie_restauration_tourisme,MET106;MET107;MET108
+surreservation,technique,Vente volontaire au-dela de la capacite reelle.,overbooking,sobreventa,overbooking,sireservasyon,hotellerie_restauration_tourisme,MET106;MET107;MET108
+non-presentation,technique,Client reserve qui ne se presente pas.,no-show,no show,no-show,pa prezante,hotellerie_restauration_tourisme,MET106;MET107;MET108
+montee en gamme,courant,Vente d une prestation superieure au moment de l accueil.,upselling,venta cruzada superior,upselling,monte an gam,hotellerie_restauration_tourisme,MET106;MET107;MET108
+mise en place,technique,Preparation des postes avant le service.,mise en place,puesta a punto,mise en place,mete an plas,hotellerie_restauration_tourisme,MET106;MET107;MET108
+fiche technique de plat,technique,"Document fixant grammages, cout et dressage.",recipe card,ficha tecnica de plato,ficha tecnica de prato,fich teknik pla,hotellerie_restauration_tourisme,MET106;MET107;MET108
+cout matiere,technique,Part du cout des denrees dans le prix de vente.,food cost,coste de materia,custo de materia,kou matyè,hotellerie_restauration_tourisme,MET106;MET107;MET108
+coup de feu,familier,Pic d activite au coeur du service.,rush,hora punta,pico de servico,kou dife,hotellerie_restauration_tourisme,MET106;MET107;MET108
+couvert,courant,Unite comptant un client servi a table.,cover,cubierto,couvert,kouvè,hotellerie_restauration_tourisme,MET106;MET107;MET108
+circuit touristique,courant,Itineraire organise de visites.,tour itinerary,circuito turistico,circuito turistico,sikwi touris,hotellerie_restauration_tourisme,MET106;MET107;MET108
+saisonnalite,technique,Variation reguliere de l activite selon la periode.,seasonality,estacionalidad,sazonalidade,sezonalite,hotellerie_restauration_tourisme,MET106;MET107;MET108
+capacite d accueil,technique,Nombre maximal de personnes pouvant etre recues.,carrying capacity,capacidad de acogida,capacidade de acolhimento,kapasite akèy,hotellerie_restauration_tourisme,MET106;MET107;MET108
+avis client,courant,Appreciation publiee par un client apres son sejour.,guest review,resena de cliente,avaliacao de cliente,avi kliyan,hotellerie_restauration_tourisme,MET106;MET107;MET108
+etre complet,familier,Ne plus avoir de disponibilite a la vente.,to be fully booked,estar completo,estar lotado,konplè,hotellerie_restauration_tourisme,MET106;MET107;MET108

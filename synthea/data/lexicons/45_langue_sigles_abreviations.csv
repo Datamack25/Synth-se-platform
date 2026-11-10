@@ -1,0 +1,51 @@
+sigle,signification,domaine,en
+LCB-FT,lutte contre le blanchiment de capitaux et le financement du terrorisme,conformite,AML/CFT
+KYC,connaissance du client,conformite,know your customer
+KYB,connaissance de l entreprise cliente,conformite,know your business
+BE,beneficiaire effectif,conformite,ultimate beneficial owner
+PPE,personne politiquement exposee,conformite,politically exposed person
+DS,declaration de soupcon,conformite,suspicious activity report
+CRF,cellule de renseignement financier,conformite,financial intelligence unit
+GAFI,groupe d action financiere,conformite,FATF
+EER,evaluation des risques de l entreprise,conformite,enterprise risk assessment
+DDR,diligence raisonnable renforcee,conformite,enhanced due diligence
+RGPD,reglement general sur la protection des donnees,juridique,GDPR
+DPO,delegue a la protection des donnees,juridique,data protection officer
+CA,chiffre d affaires,finance,revenue
+EBE,excedent brut d exploitation,finance,EBITDA
+BFR,besoin en fonds de roulement,finance,working capital requirement
+TRI,taux de rentabilite interne,finance,internal rate of return
+VAN,valeur actuelle nette,finance,net present value
+PNB,produit net bancaire,finance,net banking income
+TAEG,taux annuel effectif global,finance,annual percentage rate
+VaR,valeur en risque,finance,value at risk
+KPI,indicateur cle de performance,pilotage,key performance indicator
+OKR,objectifs et resultats cles,pilotage,objectives and key results
+SWOT,forces faiblesses opportunites menaces,strategie,SWOT
+RACI,responsable approbateur consulte informe,pilotage,RACI
+MVP,produit minimum viable,startup,minimum viable product
+CAC,cout d acquisition client,startup,customer acquisition cost
+LTV,valeur vie client,startup,lifetime value
+ARR,revenu annuel recurrent,startup,annual recurring revenue
+B2B,entre entreprises,commerce,business to business
+B2C,de l entreprise au consommateur,commerce,business to consumer
+SLA,engagement de niveau de service,informatique,service level agreement
+API,interface de programmation applicative,informatique,application programming interface
+CI/CD,integration et livraison continues,informatique,continuous integration and delivery
+SIEM,gestion des evenements de securite,cybersecurite,security information and event management
+IOC,indicateur de compromission,cybersecurite,indicator of compromise
+MFA,authentification multifacteur,cybersecurite,multi-factor authentication
+PCA,plan de continuite d activite,risques,business continuity plan
+PRA,plan de reprise d activite,risques,disaster recovery plan
+HACCP,analyse des dangers et points critiques,agroalimentaire,hazard analysis critical control point
+AMM,autorisation de mise sur le marche,pharmacie,marketing authorisation
+BPF,bonnes pratiques de fabrication,pharmacie,good manufacturing practice
+VEFA,vente en etat futur d achevement,immobilier,off-plan sale
+DPGF,decomposition du prix global et forfaitaire,btp,priced breakdown
+GPEC,gestion previsionnelle des emplois et competences,rh,workforce planning
+DSN,declaration sociale nominative,rh,payroll social declaration
+CDI,contrat a duree indeterminee,rh,permanent contract
+CDD,contrat a duree determinee,rh,fixed-term contract
+ONG,organisation non gouvernementale,humanitaire,non-governmental organisation
+ODD,objectifs de developpement durable,humanitaire,sustainable development goals
+M&E,suivi et evaluation,humanitaire,monitoring and evaluation

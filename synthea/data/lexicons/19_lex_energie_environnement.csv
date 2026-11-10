@@ -1,0 +1,17 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+puissance installee,technique,Capacite maximale de production d une installation.,installed capacity,potencia instalada,potencia instalada,pisans enstale,energie_environnement,MET079;MET080
+facteur de charge,technique,Production reelle rapportee a la production maximale possible.,capacity factor,factor de carga,fator de carga,faktè chaj,energie_environnement,MET079;MET080
+intermittence,technique,Variabilite de production des sources renouvelables.,intermittency,intermitencia,intermitencia,entèmitans,energie_environnement,MET079;MET080
+effacement de consommation,technique,Reduction volontaire de la demande en periode de pointe.,demand response,respuesta de demanda,resposta da procura,efasman konsomasyon,energie_environnement,MET079;MET080
+raccordement au reseau,technique,Connexion physique d une installation au reseau electrique.,grid connection,conexion a la red,ligacao a rede,rakòdman nan rezo,energie_environnement,MET079;MET080
+mix energetique,courant,Repartition des sources dans la production totale.,energy mix,mix energetico,mix energetico,mix enèjetik,energie_environnement,MET079;MET080
+bilan carbone,technique,Comptabilisation des emissions de gaz a effet de serre.,carbon footprint,huella de carbono,pegada de carbono,bilan kabòn,energie_environnement,MET079;MET080
+etude d impact,technique,Evaluation des effets d un projet sur l environnement.,environmental impact assessment,evaluacion de impacto ambiental,avaliacao de impacto ambiental,etid enpak,energie_environnement,MET079;MET080
+mesure compensatoire,technique,Action corrigeant un dommage environnemental residuel.,offset measure,medida compensatoria,medida compensatoria,mezi konpansatwa,energie_environnement,MET079;MET080
+sobriete energetique,courant,Reduction des usages avant recours a la technique.,energy sufficiency,sobriedad energetica,sobriedade energetica,sobriyete enèjetik,energie_environnement,MET079;MET080
+rendement de conversion,technique,Part de l energie entrante restituee en energie utile.,conversion efficiency,rendimiento de conversion,rendimento de conversao,randman konvèsyon,energie_environnement,MET079;MET080
+precarite energetique,courant,Difficulte a couvrir ses besoins essentiels en energie.,energy poverty,pobreza energetica,pobreza energetica,prekarite enèjetik,energie_environnement,MET079;MET080
+economie circulaire,courant,Modele visant a reemployer et recycler les ressources.,circular economy,economia circular,economia circular,ekonomi sikilè,energie_environnement,MET079;MET080
+sequestration du carbone,technique,Stockage durable du carbone hors de l atmosphere.,carbon sequestration,secuestro de carbono,sequestro de carbono,sekèstrasyon kabòn,energie_environnement,MET079;MET080
+biodiversite,courant,Diversite des especes et des milieux naturels.,biodiversity,biodiversidad,biodiversidade,biyodivèsite,energie_environnement,MET079;MET080
+transition juste,courant,Accompagnement social des mutations ecologiques.,just transition,transicion justa,transicao justa,tranzisyon jis,energie_environnement,MET079;MET080

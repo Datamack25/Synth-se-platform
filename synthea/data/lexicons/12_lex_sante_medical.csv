@@ -1,0 +1,18 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+anamnese,technique,Recueil de l histoire du patient et de ses antecedents.,medical history taking,anamnesis,anamnese,anamnèz,sante_medical,MET051;MET052;MET053;MET054;MET055
+diagnostic differentiel,technique,Liste des hypotheses a ecarter avant conclusion.,differential diagnosis,diagnostico diferencial,diagnostico diferencial,dyagnostik diferansyèl,sante_medical,MET051;MET052;MET053;MET054;MET055
+constantes vitales,technique,Parametres de surveillance tels que pouls et tension.,vital signs,constantes vitales,sinais vitais,konstant vital,sante_medical,MET051;MET052;MET053;MET054;MET055
+posologie,technique,Dose et rythme d administration d un medicament.,dosage,posologia,posologia,pozoloji,sante_medical,MET051;MET052;MET053;MET054;MET055
+effet indesirable,technique,Reaction nuisible liee a un traitement.,adverse effect,efecto adverso,efeito adverso,efè endezirab,sante_medical,MET051;MET052;MET053;MET054;MET055
+observance,technique,Respect par le patient du traitement prescrit.,adherence,adherencia,adesao,obsèvans,sante_medical,MET051;MET052;MET053;MET054;MET055
+pronostic,technique,Evolution probable de l etat du patient.,prognosis,pronostico,prognostico,pwonostik,sante_medical,MET051;MET052;MET053;MET054;MET055
+protocole de soins,technique,Sequence standardisee de prise en charge.,care protocol,protocolo asistencial,protocolo de cuidados,pwotokòl swen,sante_medical,MET051;MET052;MET053;MET054;MET055
+transmission infirmiere,technique,Information transmise entre equipes lors de la releve.,nursing handover,relevo de enfermeria,passagem de plantao,transmisyon enfimye,sante_medical,MET051;MET052;MET053;MET054;MET055
+triage,technique,Classement des patients par degre d urgence.,triage,triaje,triagem,triyaj,sante_medical,MET051;MET052;MET053;MET054;MET055
+consentement eclaire,technique,Accord donne apres information complete.,informed consent,consentimiento informado,consentimento informado,konsantman klè,sante_medical,MET051;MET052;MET053;MET054;MET055
+secret medical,technique,Obligation de confidentialite sur l etat du patient.,medical confidentiality,secreto medico,sigilo medico,sekrè medikal,sante_medical,MET051;MET052;MET053;MET054;MET055
+parcours de soins,courant,Enchainement coordonne des intervenants autour du patient.,care pathway,ruta asistencial,percurso de cuidados,pakou swen,sante_medical,MET051;MET052;MET053;MET054;MET055
+education therapeutique,technique,Apprentissage par le patient de la gestion de sa maladie.,patient education,educacion terapeutica,educacao terapeutica,edikasyon terapetik,sante_medical,MET051;MET052;MET053;MET054;MET055
+soins palliatifs,technique,Prise en charge visant le confort en phase avancee.,palliative care,cuidados paliativos,cuidados paliativos,swen palyatif,sante_medical,MET051;MET052;MET053;MET054;MET055
+hygiene des mains,courant,Geste de base de prevention des infections.,hand hygiene,higiene de manos,higiene das maos,ijyèn men,sante_medical,MET051;MET052;MET053;MET054;MET055
+etre de garde,familier,Assurer la permanence hors horaires ordinaires.,to be on call,estar de guardia,estar de plantao,ap fè gad,sante_medical,MET051;MET052;MET053;MET054;MET055

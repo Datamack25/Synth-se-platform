@@ -1,0 +1,17 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+armateur,technique,Proprietaire ou exploitant commercial du navire.,shipowner,armador,armador,amatè,maritime_peche,MET074;MET075
+affretement,technique,Location d un navire ou d une partie de sa capacite.,chartering,fletamento,afretamento,afretman,maritime_peche,MET074;MET075
+manifeste,technique,Liste officielle des marchandises embarquees.,cargo manifest,manifiesto de carga,manifesto de carga,manifès,maritime_peche,MET074;MET075
+tirant d eau,technique,Hauteur immergee de la coque.,draught,calado,calado,tiran dlo,maritime_peche,MET074;MET075
+jauge brute,technique,Mesure du volume interieur du navire.,gross tonnage,arqueo bruto,arqueacao bruta,joj brit,maritime_peche,MET074;MET075
+quart,technique,Periode de service continue a bord.,watch,guardia,quarto,ka,maritime_peche,MET074;MET075
+routage meteo,technique,Choix de route tenant compte des conditions marines.,weather routing,derrota meteorologica,roteamento meteorologico,woutaj meteyo,maritime_peche,MET074;MET075
+escale,courant,Arret du navire dans un port.,port call,escala,escala,eskal,maritime_peche,MET074;MET075
+pilotage portuaire,technique,Assistance obligatoire a l entree d un port.,harbour pilotage,practicaje,pilotagem,pilotaj pò,maritime_peche,MET074;MET075
+marnage,technique,Amplitude entre basse et haute mer.,tidal range,carrera de marea,amplitude de mare,manaj,maritime_peche,MET074;MET075
+engin de peche,technique,Materiel utilise pour capturer le poisson.,fishing gear,arte de pesca,aparelho de pesca,zouti lapèch,maritime_peche,MET074;MET075
+quota de peche,technique,Volume maximal autorise par espece et par zone.,fishing quota,cuota de pesca,quota de pesca,kota lapèch,maritime_peche,MET074;MET075
+maree,courant,"Sortie en mer d un bateau de peche, de son depart a son retour.",fishing trip,marea,mare,mare,maritime_peche,MET074;MET075
+criee,courant,Vente aux encheres du poisson debarque.,fish auction,lonja,lota,kriye,maritime_peche,MET074;MET075
+prise accessoire,technique,Capture non ciblee par l engin utilise.,bycatch,captura accesoria,captura acessoria,priz akseswa,maritime_peche,MET074;MET075
+gros temps,familier,Conditions de mer severes.,heavy weather,mal tiempo,mau tempo,gwo tan,maritime_peche,MET074;MET075

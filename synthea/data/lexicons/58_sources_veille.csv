@@ -1,0 +1,37 @@
+nom,domaine,thematique,langue,fiabilite,type
+Legifrance,legifrance.gouv.fr,"droit francais, codes, jurisprudence",fr,officielle,institution
+EUR-Lex,eur-lex.europa.eu,droit de l Union europeenne,fr/en,officielle,institution
+Journal officiel UE,eur-lex.europa.eu,publications officielles UE,fr/en,officielle,institution
+GAFI / FATF,fatf-gafi.org,"normes LCB-FT, listes de juridictions",fr/en,officielle,institution
+Tracfin,economie.gouv.fr,renseignement financier France,fr,officielle,institution
+ACPR,acpr.banque-france.fr,supervision banque et assurance,fr,officielle,institution
+AMF,amf-france.org,marches financiers France,fr,officielle,institution
+Banque de France,banque-france.fr,statistiques et stabilite financiere,fr,officielle,institution
+Banque centrale europeenne,ecb.europa.eu,"politique monetaire, supervision",fr/en,officielle,institution
+EBA,eba.europa.eu,orientations bancaires europeennes,en,officielle,institution
+ESMA,esma.europa.eu,marches financiers europeens,en,officielle,institution
+CNIL,cnil.fr,protection des donnees,fr,officielle,institution
+ANSSI,cyber.gouv.fr,cybersecurite,fr,officielle,institution
+INSEE,insee.fr,statistiques francaises,fr,officielle,statistiques
+Eurostat,ec.europa.eu,statistiques europeennes,fr/en,officielle,statistiques
+Banque mondiale,worldbank.org,donnees economiques mondiales,en/fr,officielle,statistiques
+FMI,imf.org,"rapports pays, stabilite financiere",en/fr,officielle,statistiques
+OCDE,oecd.org,etudes economiques et fiscales,fr/en,officielle,statistiques
+Nations unies,un.org,"resolutions, sanctions, rapports",fr/en,officielle,institution
+OFAC,ofac.treasury.gov,sanctions americaines,en,officielle,institution
+Conseil de l UE sanctions,sanctionsmap.eu,sanctions europeennes,en,officielle,institution
+Transparency International,transparency.org,indice de perception de la corruption,en/fr,reference,ong
+BIS,bis.org,"comite de Bale, reglementation prudentielle",en,officielle,institution
+CEPEJ / Justice UE,coe.int,systemes judiciaires,fr/en,officielle,institution
+Service-public.fr,service-public.fr,demarches administratives France,fr,officielle,institution
+data.gouv.fr,data.gouv.fr,donnees ouvertes francaises,fr,officielle,donnees
+HAL archives ouvertes,hal.science,publications scientifiques,fr/en,reference,recherche
+PubMed,pubmed.ncbi.nlm.nih.gov,litterature biomedicale,en,reference,recherche
+arXiv,arxiv.org,preprints sciences et IA,en,reference,recherche
+BRH Haiti,brh.ht,banque centrale d Haiti,fr,officielle,institution
+IHSI Haiti,ihsi.gouv.ht,statistiques haitiennes,fr,officielle,statistiques
+CARICOM,caricom.org,integration caribeenne,en,officielle,institution
+BCEAO,bceao.int,banque centrale UEMOA,fr,officielle,institution
+BEAC,beac.int,banque centrale CEMAC,fr,officielle,institution
+GIABA,giaba.org,LCB-FT Afrique de l Ouest,fr/en,officielle,institution
+CFATF / GAFIC,cfatf-gafic.org,LCB-FT Caraibes,en,officielle,institution

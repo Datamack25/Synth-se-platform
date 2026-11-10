@@ -1,0 +1,22 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+clause resolutoire,technique,Stipulation permettant la rupture automatique en cas de manquement.,termination clause,clausula resolutoria,clausula resolutiva,kloz rezolitwa,droit_juridique,MET031;MET032;MET033;MET034
+clause penale,technique,Montant forfaitaire du en cas d inexecution.,penalty clause,clausula penal,clausula penal,kloz penal,droit_juridique,MET031;MET032;MET033;MET034
+force majeure,technique,Evenement imprevisible et irresistible exonerant de responsabilite.,force majeure,fuerza mayor,forca maior,fòs majè,droit_juridique,MET031;MET032;MET033;MET034
+obligation de moyens,technique,"Engagement de mettre en oeuvre des diligences, sans garantir le resultat.",duty of care,obligacion de medios,obrigacao de meios,obligasyon mwayen,droit_juridique,MET031;MET032;MET033;MET034
+obligation de resultat,technique,Engagement d atteindre un resultat precis.,strict obligation,obligacion de resultado,obrigacao de resultado,obligasyon rezilta,droit_juridique,MET031;MET032;MET033;MET034
+mise en cause,technique,Appel d un tiers dans une procedure en cours.,joinder,llamada en garantia,chamamento ao processo,mete an koz,droit_juridique,MET031;MET032;MET033;MET034
+prescription,technique,Delai au terme duquel une action n est plus recevable.,limitation period,prescripcion,prescricao,preskripsyon,droit_juridique,MET031;MET032;MET033;MET034
+contentieux,courant,Litige porte devant une juridiction.,litigation,litigio,litigio,kontansye,droit_juridique,MET031;MET032;MET033;MET034
+transaction,technique,Accord mettant fin a un litige par concessions reciproques.,settlement,acuerdo transaccional,acordo,tranzaksyon,droit_juridique,MET031;MET032;MET033;MET034
+garantie d actif et de passif,technique,Engagement du vendeur sur la consistance de la societe cedee.,warranty and indemnity,garantia de activos y pasivos,garantia de ativos e passivos,garanti aktif ak pasif,droit_juridique,MET031;MET032;MET033;MET034
+audit d acquisition,technique,Examen prealable approfondi d une cible.,due diligence,due diligence,due diligence,odit akizisyon,droit_juridique,MET031;MET032;MET033;MET034
+pacte d associes,technique,Convention organisant les rapports entre actionnaires.,shareholders agreement,pacto de socios,acordo de acionistas,pak asosye,droit_juridique,MET031;MET032;MET033;MET034
+mandat social,technique,Fonction de direction confiee par les organes sociaux.,corporate office,cargo social,mandato social,manda sosyal,droit_juridique,MET031;MET032;MET033;MET034
+abus de biens sociaux,technique,Usage des biens de la societe contraire a son interet.,misuse of corporate assets,administracion desleal,abuso de bens sociais,abi byen sosyal,droit_juridique,MET031;MET032;MET033;MET034
+conflit d interets,courant,Situation ou un interet personnel peut influencer une decision.,conflict of interest,conflicto de intereses,conflito de interesses,konfli enterè,droit_juridique,MET031;MET032;MET033;MET034
+confidentialite,courant,Obligation de ne pas divulguer une information recue.,confidentiality,confidencialidad,confidencialidade,konfidansyalite,droit_juridique,MET031;MET032;MET033;MET034
+donnee a caractere personnel,technique,Information permettant d identifier une personne physique.,personal data,dato personal,dado pessoal,done pèsonèl,droit_juridique,MET031;MET032;MET033;MET034
+base legale du traitement,technique,Fondement juridique autorisant l usage des donnees.,lawful basis,base juridica,base legal,baz legal tretman,droit_juridique,MET031;MET032;MET033;MET034
+analyse d impact,technique,Etude prealable des risques d un traitement sensible.,impact assessment,evaluacion de impacto,avaliacao de impacto,analiz enpak,droit_juridique,MET031;MET032;MET033;MET034
+mise en demeure,technique,Injonction prealable a toute action contentieuse.,formal demand,requerimiento formal,notificacao formal,mete an demè,droit_juridique,MET031;MET032;MET033;MET034
+aller au contentieux,familier,Renoncer a l accord amiable et saisir le juge.,to go to court,irse a juicio,ir a tribunal,ale nan tribinal,droit_juridique,MET031;MET032;MET033;MET034

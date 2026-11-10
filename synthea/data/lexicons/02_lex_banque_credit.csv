@@ -1,0 +1,23 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+decouvert autorise,technique,Solde debiteur accepte par la banque dans une limite convenue.,authorised overdraft,descubierto autorizado,descoberto autorizado,dekouvè otorize,banque_credit,MET008;MET009;MET010;MET011;MET012
+taux annuel effectif global,technique,Cout total du credit exprime en taux annuel.,annual percentage rate,TAE,taxa anual efetiva,to anyèl total,banque_credit,MET008;MET009;MET010;MET011;MET012
+capacite de remboursement,technique,Aptitude mesuree d un emprunteur a honorer ses echeances.,repayment capacity,capacidad de pago,capacidade de pagamento,kapasite remèt,banque_credit,MET008;MET009;MET010;MET011;MET012
+taux d endettement,technique,Part des charges de credit dans les revenus.,debt-to-income ratio,ratio de endeudamiento,taxa de endividamento,to andetman,banque_credit,MET008;MET009;MET010;MET011;MET012
+garantie reelle,technique,"Surete portant sur un bien, comme une hypotheque ou un nantissement.",collateral,garantia real,garantia real,garanti reyèl,banque_credit,MET008;MET009;MET010;MET011;MET012
+caution personnelle,technique,Engagement d un tiers de payer en cas de defaillance.,personal guarantee,aval personal,fianca pessoal,kosyon pèsonèl,banque_credit,MET008;MET009;MET010;MET011;MET012
+covenant,technique,Clause imposant le respect de ratios financiers.,covenant,covenant,covenant,kovnan,banque_credit,MET008;MET009;MET010;MET011;MET012
+scoring d octroi,technique,Note statistique qui guide la decision de credit.,credit scoring,scoring de concesion,scoring de concessao,nòt oktwa,banque_credit,MET008;MET009;MET010;MET011;MET012
+provision pour creance douteuse,technique,Charge constatee face a un risque de non-recouvrement.,loan loss provision,provision por insolvencia,provisao para devedores duvidosos,pwovizyon kreyans dout,banque_credit,MET008;MET009;MET010;MET011;MET012
+creance irrecouvrable,technique,Creance dont le recouvrement est definitivement abandonne.,bad debt,credito incobrable,credito irrecuperavel,kreyans ki pa ka rekouvre,banque_credit,MET008;MET009;MET010;MET011;MET012
+impaye,courant,Echeance non honoree a sa date.,missed payment,impago,inadimplencia,echeyans ki pa peye,banque_credit,MET008;MET009;MET010;MET011;MET012
+mise en demeure,technique,Sommation formelle de payer avant poursuite.,formal notice,requerimiento,notificacao formal,mete an demè,banque_credit,MET008;MET009;MET010;MET011;MET012
+produit net bancaire,technique,Equivalent du chiffre d affaires d une banque.,net banking income,margen bruto bancario,produto bancario,pwodwi nèt bankè,banque_credit,MET008;MET009;MET010;MET011;MET012
+marge d intermediation,technique,Ecart entre interets percus et interets verses.,interest margin,margen de intermediacion,margem de intermediacao,marj entèmedyasyon,banque_credit,MET008;MET009;MET010;MET011;MET012
+coefficient d exploitation,technique,Rapport des charges aux revenus d exploitation.,cost-income ratio,ratio de eficiencia,indice de eficiencia,koefisyan eksplwatasyon,banque_credit,MET008;MET009;MET010;MET011;MET012
+ratio de solvabilite,technique,Fonds propres rapportes aux risques ponderes.,capital adequacy ratio,ratio de solvencia,indice de solvabilidade,rapò solvabilite,banque_credit,MET008;MET009;MET010;MET011;MET012
+rapprochement bancaire,technique,Controle de coherence entre comptabilite et releve.,bank reconciliation,conciliacion bancaria,reconciliacao bancaria,rapwochman bankè,banque_credit,MET008;MET009;MET010;MET011;MET012
+suspens,technique,Operation non rapprochee restant a justifier.,break,partida pendiente,pendencia,sispann,banque_credit,MET008;MET009;MET010;MET011;MET012
+mandat de prelevement,courant,Autorisation permanente de debiter un compte.,direct debit mandate,orden de domiciliacion,autorizacao de debito,manda prelèvman,banque_credit,MET008;MET009;MET010;MET011;MET012
+domiciliation,courant,Rattachement des flux de revenus a un compte.,salary domiciliation,domiciliacion,domiciliacao,domisilyasyon,banque_credit,MET008;MET009;MET010;MET011;MET012
+tomber dans le rouge,familier,Passer en solde debiteur.,to go into the red,quedarse en rojo,ficar no vermelho,tonbe nan wouj,banque_credit,MET008;MET009;MET010;MET011;MET012
+faire sauter un prelevement,familier,Rejeter un debit faute de provision.,to bounce a debit,devolver un recibo,devolver um debito,rejte yon prelèvman,banque_credit,MET008;MET009;MET010;MET011;MET012

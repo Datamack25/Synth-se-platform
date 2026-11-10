@@ -1,0 +1,18 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+maitrise d ouvrage,technique,Entite qui commande et finance l ouvrage.,client body,promotor,dono de obra,mètriz douvraj,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+maitrise d oeuvre,technique,Entite qui concoit et dirige l execution.,project supervision,direccion de obra,direcao de obra,mètriz dèv,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+permis de construire,courant,Autorisation administrative prealable aux travaux.,building permit,licencia de obra,licenca de construcao,pèmi konstwi,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+coffrage,technique,Moule provisoire recevant le beton frais.,formwork,encofrado,cofragem,kofraj,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+ferraillage,technique,Armature metallique noyee dans le beton.,rebar assembly,armadura,armadura,feraj,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+corps d etat,technique,Specialite technique intervenant sur le chantier.,trade,oficio,especialidade,kò deta,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+gros oeuvre,technique,Ouvrages porteurs assurant la stabilite.,structural works,obra gruesa,estrutura,gwo zèv,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+second oeuvre,technique,Travaux de finition et d equipement.,fit-out works,acabados,acabamentos,segon zèv,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+metre,technique,Quantification des ouvrages a realiser.,quantity take-off,medicion,medicao,mèt,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+devis quantitatif estimatif,technique,Document chiffrant poste par poste les travaux.,priced bill of quantities,presupuesto detallado,orcamento detalhado,deviz kantitatif,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+reception des travaux,technique,Acte par lequel le client accepte l ouvrage.,handover,recepcion de obra,recepcao da obra,resepsyon travay,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+reserve,technique,Defaut releve a la reception et a reprendre.,snag,reserva,reserva,rezèv,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+plan de prevention,technique,Document organisant la securite des intervenants.,safety plan,plan de prevencion,plano de prevencao,plan prevansyon,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+penalite de retard,technique,Somme due en cas de depassement du delai.,delay penalty,penalizacion por retraso,multa por atraso,penalite reta,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+avenant au marche,technique,Modification contractuelle des travaux ou du prix.,variation order,modificado,aditamento,avnan nan mache,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+intemperies,courant,Conditions meteo justifiant l arret du chantier.,adverse weather,intemperie,intemperies,move tan,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066
+etre dans les clous,familier,Respecter les delais et le budget prevus.,to be on track,ir en plazo,estar nos prazos,nan limit,batiment_btp,MET060;MET061;MET062;MET063;MET064;MET065;MET066

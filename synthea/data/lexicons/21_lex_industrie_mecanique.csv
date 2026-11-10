@@ -1,0 +1,18 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+gamme de fabrication,technique,Suite ordonnee des operations de production.,routing sheet,hoja de ruta,roteiro de fabrico,gam fabrikasyon,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+temps de cycle,technique,Duree necessaire pour produire une unite.,cycle time,tiempo de ciclo,tempo de ciclo,tan sik,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+cadence,courant,Nombre de pieces produites par unite de temps.,throughput rate,cadencia,cadencia,kadans,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+taux de rebut,technique,Part des pieces non conformes dans la production.,scrap rate,tasa de rechazo,taxa de rejeicao,to rebi,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+non-conformite,technique,Ecart constate par rapport a une exigence.,non-conformity,no conformidad,nao conformidade,non-konfòmite,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+action corrective,technique,Mesure supprimant la cause d un defaut.,corrective action,accion correctiva,acao corretiva,aksyon korektif,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+analyse des causes racines,technique,Recherche de l origine profonde d un probleme.,root cause analysis,analisis de causa raiz,analise de causa raiz,analiz kòz rasin,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+maintenance preventive,technique,Intervention planifiee avant apparition de la panne.,preventive maintenance,mantenimiento preventivo,manutencao preventiva,antretyen prevantif,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+maintenance curative,technique,Reparation apres defaillance constatee.,corrective maintenance,mantenimiento correctivo,manutencao corretiva,antretyen kiratif,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+temps d arret,courant,Periode pendant laquelle la ligne ne produit pas.,downtime,tiempo de parada,tempo de parada,tan rete,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+amelioration continue,courant,Demarche de progres par petits pas reguliers.,continuous improvement,mejora continua,melhoria continua,amelyorasyon kontinyèl,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+cinq pourquoi,technique,Technique d interrogation successive pour remonter a la cause.,five whys,cinco por que,cinco porques,senk poukisa,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+gaspillage,courant,Activite qui consomme des ressources sans creer de valeur.,waste,desperdicio,desperdicio,gaspiyay,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+implantation d atelier,technique,Disposition des machines et des flux dans l espace.,plant layout,distribucion en planta,implantacao fabril,enplantasyon atelye,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+reglage machine,courant,Ajustement des parametres avant lancement de serie.,machine setup,ajuste de maquina,ajuste de maquina,reglaj machin,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+qualification de soudure,technique,Validation d un mode operatoire de soudage.,weld qualification,homologacion de soldadura,qualificacao de soldadura,kalifikasyon soudi,industrie_mecanique,MET081;MET082;MET083;MET084;MET085
+ligne a l arret,familier,"Production interrompue, souvent par panne.",line is down,linea parada,linha parada,liy la rete,industrie_mecanique,MET081;MET082;MET083;MET084;MET085

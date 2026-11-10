@@ -1,0 +1,72 @@
+ht,fr,en,domaine,note
+rezime,resume,summary,document,nom
+rapo,rapport,report,document,orthographe courante : rapò
+liv,livre,book,document,
+paj,page,page,document,
+chapit,chapitre,chapter,document,
+tit,titre,title,document,
+pwen kle,point cle,key point,document,
+egzanp,exemple,example,document,
+prèv,preuve,evidence,analyse,
+kesyon,question,question,analyse,
+repons,reponse,answer,analyse,
+desizyon,decision,decision,pilotage,
+plan daksyon,plan d action,action plan,pilotage,
+objektif,objectif,objective,pilotage,
+rezilta,resultat,result,pilotage,
+bidjè,budget,budget,finance,
+lajan,argent,money,finance,
+kòb,"argent, monnaie",money,finance,registre courant
+bank,banque,bank,finance,
+kredi,credit,credit,finance,
+prè,pret,loan,finance,
+envestisman,investissement,investment,finance,
+antrepriz,entreprise,company,business,
+komès,commerce,trade,business,
+mache,marche,market,business,
+kliyan,client,customer,business,
+travay,"travail, emploi",work,social,
+fòmasyon,formation,training,social,
+lekòl,ecole,school,social,
+sante,sante,health,social,
+dlo,eau,water,social,
+kouran,electricite,electricity,social,registre courant
+wout,route,road,infrastructure,
+pò,port,port,infrastructure,
+ayopò,aeroport,airport,infrastructure,
+depatman,departement,department,territoire,
+komin,commune,municipality,territoire,
+seksyon kominal,section communale,communal section,territoire,
+gouvènman,gouvernement,government,politique,
+eleksyon,election,election,politique,
+vòt,vote,vote,politique,
+kandida,candidat,candidate,politique,
+kanpay,campagne,campaign,politique,
+pèp,peuple,people,politique,
+sitwayen,citoyen,citizen,politique,
+dyaspora,diaspora,diaspora,social,
+transfè lajan,transfert d argent,remittance,finance,
+agrikilti,agriculture,agriculture,economie,
+jaden,"jardin, parcelle cultivee",plot,economie,
+kiltivatè,agriculteur,farmer,economie,
+komèsan,commercant,trader,economie,
+jenès,jeunesse,youth,social,
+fanm,femme,woman,social,
+timoun,enfant,child,social,
+kominote,communaute,community,social,
+solidarite,solidarite,solidarity,social,
+devlopman,developpement,development,economie,
+pwojè,projet,project,pilotage,
+pwogram,programme,programme,pilotage,
+ekip,equipe,team,pilotage,
+responsab,responsable,manager,pilotage,
+rapòte,rendre compte,to report,pilotage,verbe
+kontwole,controler,to control,pilotage,verbe
+eksplike,expliquer,to explain,communication,verbe
+prezante,presenter,to present,communication,verbe
+konvenk,convaincre,to convince,communication,verbe
+deside,decider,to decide,pilotage,verbe
+ranfòse,renforcer,to strengthen,pilotage,verbe
+amelyore,ameliorer,to improve,pilotage,verbe
+koumanse,commencer,to start,general,verbe
+fini,terminer,to finish,general,verbe

@@ -1,0 +1,39 @@
+pays,iso2,region,langue_officielle,monnaie,institution_financiere,note_corridor
+France,FR,Europe,francais,EUR,ACPR / Banque de France,corridor sortant vers Afrique et Caraibes
+Belgique,BE,Europe,francais;neerlandais,EUR,BNB,diaspora africaine importante
+Espagne,ES,Europe,espagnol,EUR,Banco de Espana,corridor vers Amerique latine
+Portugal,PT,Europe,portugais,EUR,Banco de Portugal,corridor vers Afrique lusophone et Bresil
+Royaume-Uni,GB,Europe,anglais,GBP,FCA,place de transit
+Etats-Unis,US,Amerique du Nord,anglais,USD,FinCEN / OFAC,premier corridor vers Haiti
+Canada,CA,Amerique du Nord,anglais;francais,CAD,FINTRAC,diaspora haitienne et africaine
+Haiti,HT,Caraibes,francais;creole haitien,HTG,BRH,forte dependance aux transferts
+Republique dominicaine,DO,Caraibes,espagnol,DOP,Banco Central,frontiere terrestre avec Haiti
+Jamaique,JM,Caraibes,anglais,JMD,Bank of Jamaica,corridor CARICOM
+Trinite-et-Tobago,TT,Caraibes,anglais,TTD,Central Bank,place financiere regionale
+Guadeloupe,GP,Caraibes,francais,EUR,IEDOM,territoire francais
+Martinique,MQ,Caraibes,francais,EUR,IEDOM,territoire francais
+Guyane,GF,Amerique du Sud,francais,EUR,IEDOM,territoire francais
+Senegal,SN,Afrique de l Ouest,francais,XOF,BCEAO,corridor majeur depuis la France
+Cote d Ivoire,CI,Afrique de l Ouest,francais,XOF,BCEAO,hub economique UEMOA
+Mali,ML,Afrique de l Ouest,francais,XOF,BCEAO,forte dependance aux transferts
+Benin,BJ,Afrique de l Ouest,francais,XOF,BCEAO,
+Burkina Faso,BF,Afrique de l Ouest,francais,XOF,BCEAO,
+Togo,TG,Afrique de l Ouest,francais,XOF,BCEAO,
+Niger,NE,Afrique de l Ouest,francais,XOF,BCEAO,
+Guinee,GN,Afrique de l Ouest,francais,GNF,BCRG,
+Nigeria,NG,Afrique de l Ouest,anglais,NGN,CBN,premier corridor africain en volume
+Ghana,GH,Afrique de l Ouest,anglais,GHS,Bank of Ghana,
+Cameroun,CM,Afrique centrale,francais;anglais,XAF,BEAC,
+Gabon,GA,Afrique centrale,francais,XAF,BEAC,
+Congo,CG,Afrique centrale,francais,XAF,BEAC,
+RD Congo,CD,Afrique centrale,francais,CDF,BCC,corridor en forte croissance
+Maroc,MA,Afrique du Nord,arabe;francais,MAD,Bank Al-Maghrib,corridor majeur depuis l Europe
+Tunisie,TN,Afrique du Nord,arabe;francais,TND,BCT,
+Algerie,DZ,Afrique du Nord,arabe;francais,DZD,Banque d Algerie,
+Bresil,BR,Amerique du Sud,portugais,BRL,Banco Central do Brasil,corridor lusophone
+Cap-Vert,CV,Afrique de l Ouest,portugais,CVE,BCV,corridor lusophone
+Angola,AO,Afrique australe,portugais,AOA,BNA,corridor lusophone
+Mozambique,MZ,Afrique australe,portugais,MZN,Banco de Mocambique,
+Mexique,MX,Amerique du Nord,espagnol,MXN,Banco de Mexico,premier corridor mondial en volume
+Colombie,CO,Amerique du Sud,espagnol,COP,Banco de la Republica,
+Perou,PE,Amerique du Sud,espagnol,PEN,BCRP,

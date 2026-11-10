@@ -1,0 +1,148 @@
+/* =========================================================
+   SYNTHEA - Feuille de style professionnelle
+   Palette : encre profonde / vert emeraude sobre / sable
+   ========================================================= */
+
+:root {
+  --sx-ink:       #17202A;
+  --sx-ink-soft:  #44525F;
+  --sx-line:      #DDD7CC;
+  --sx-paper:     #FBFAF7;
+  --sx-paper-2:   #F1EEE8;
+  --sx-brand:     #1F6F6B;
+  --sx-brand-d:   #14504D;
+  --sx-brand-l:   #E6F0EF;
+  --sx-gold:      #B07D2B;
+  --sx-red:       #A33A2E;
+  --sx-amber:     #C08A1E;
+  --sx-green:     #2E7D4F;
+  --sx-radius:    10px;
+  --sx-shadow:    0 1px 2px rgba(23,32,42,.06), 0 8px 24px rgba(23,32,42,.05);
+}
+
+/* ---------- Typographie generale ---------- */
+html, body, [class*="css"] {
+  font-feature-settings: "kern" 1, "liga" 1, "tnum" 1;
+}
+.stApp { background: var(--sx-paper); }
+
+h1, h2, h3, h4 { color: var(--sx-ink); letter-spacing: -.012em; }
+h1 { font-weight: 680; }
+
+/* ---------- Bandeau d'entete ---------- */
+.sx-hero {
+  border: 1px solid var(--sx-line);
+  border-left: 4px solid var(--sx-brand);
+  border-radius: var(--sx-radius);
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--sx-paper-2) 100%);
+  padding: 20px 24px;
+  box-shadow: var(--sx-shadow);
+  margin-bottom: 18px;
+}
+.sx-hero .sx-kicker {
+  font-size: .70rem; text-transform: uppercase; letter-spacing: .16em;
+  color: var(--sx-brand-d); font-weight: 700;
+}
+.sx-hero h1 { margin: 6px 0 4px 0; font-size: 1.65rem; }
+.sx-hero p  { margin: 0; color: var(--sx-ink-soft); font-size: .92rem; max-width: 70ch; }
+
+/* ---------- Tuiles d'indicateurs ---------- */
+.sx-kpi-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 6px 0 16px 0; }
+.sx-kpi {
+  flex: 1 1 150px; background: #fff; border: 1px solid var(--sx-line);
+  border-radius: var(--sx-radius); padding: 14px 16px; box-shadow: var(--sx-shadow);
+}
+.sx-kpi .lab { font-size: .70rem; text-transform: uppercase; letter-spacing: .10em; color: var(--sx-ink-soft); }
+.sx-kpi .val { font-size: 1.55rem; font-weight: 660; color: var(--sx-ink); line-height: 1.15; margin-top: 4px; }
+.sx-kpi .sub { font-size: .76rem; color: var(--sx-ink-soft); margin-top: 2px; }
+.sx-kpi.ok   { border-top: 3px solid var(--sx-green); }
+.sx-kpi.warn { border-top: 3px solid var(--sx-amber); }
+.sx-kpi.bad  { border-top: 3px solid var(--sx-red); }
+.sx-kpi.brand{ border-top: 3px solid var(--sx-brand); }
+
+/* ---------- Cartes ---------- */
+.sx-card {
+  background:#fff; border:1px solid var(--sx-line); border-radius: var(--sx-radius);
+  padding:18px 20px; box-shadow: var(--sx-shadow); margin-bottom:14px;
+}
+.sx-card h4 { margin:0 0 8px 0; font-size:1rem; }
+.sx-card .meta { font-size:.76rem; color:var(--sx-ink-soft); }
+
+/* ---------- Badges ---------- */
+.sx-badge {
+  display:inline-block; padding:2px 9px; border-radius:999px; font-size:.70rem;
+  font-weight:650; letter-spacing:.03em; border:1px solid transparent; white-space:nowrap;
+}
+.sx-badge.b-brand { background:var(--sx-brand-l); color:var(--sx-brand-d); border-color:#CBE0DE; }
+.sx-badge.b-green { background:#E7F3EC; color:#1E5C39; border-color:#C9E4D4; }
+.sx-badge.b-amber { background:#FBF2DC; color:#8A6212; border-color:#EEDDB4; }
+.sx-badge.b-red   { background:#F8E9E6; color:#8A2C21; border-color:#EDCCC6; }
+.sx-badge.b-grey  { background:var(--sx-paper-2); color:var(--sx-ink-soft); border-color:var(--sx-line); }
+
+/* ---------- Fiche agent ---------- */
+.sx-agent {
+  display:flex; gap:14px; align-items:flex-start; background:#fff;
+  border:1px solid var(--sx-line); border-radius:var(--sx-radius);
+  padding:14px 16px; margin-bottom:10px; box-shadow:var(--sx-shadow);
+}
+.sx-agent .sigil {
+  width:42px; height:42px; flex:0 0 42px; border-radius:9px;
+  background:var(--sx-brand); color:#fff; display:flex; align-items:center; justify-content:center;
+  font-weight:720; font-size:1rem; letter-spacing:.02em;
+}
+.sx-agent .nm { font-weight:680; font-size:.95rem; }
+.sx-agent .ro { font-size:.74rem; text-transform:uppercase; letter-spacing:.09em; color:var(--sx-brand-d); font-weight:650; }
+.sx-agent .ms { font-size:.84rem; color:var(--sx-ink-soft); margin-top:4px; }
+
+/* ---------- Rendu document (synthese) ---------- */
+.sx-doc {
+  background:#fff; border:1px solid var(--sx-line); border-radius:var(--sx-radius);
+  padding:30px 38px; box-shadow:var(--sx-shadow); max-width: 86ch;
+}
+.sx-doc h1 { font-size:1.5rem; margin:0 0 2px 0; }
+.sx-doc .sx-sub { color:var(--sx-ink-soft); font-size:.86rem; margin-bottom:18px;
+  border-bottom:1px solid var(--sx-line); padding-bottom:12px; }
+.sx-doc h2 {
+  font-size:1.02rem; margin:22px 0 8px 0; padding-bottom:4px;
+  border-bottom:1px solid var(--sx-paper-2); color:var(--sx-brand-d);
+}
+.sx-doc p, .sx-doc li { font-size:.92rem; line-height:1.62; color:var(--sx-ink); }
+.sx-doc blockquote {
+  border-left:3px solid var(--sx-gold); margin:14px 0; padding:4px 16px;
+  color:var(--sx-ink-soft); font-style:italic; background:#FDFBF6;
+}
+.sx-doc .sx-ref { font-size:.72rem; color:var(--sx-brand-d); background:var(--sx-brand-l);
+  padding:1px 6px; border-radius:4px; margin-left:4px; white-space:nowrap; }
+
+/* ---------- Jauge de couverture ---------- */
+.sx-gauge { height:9px; border-radius:999px; background:var(--sx-paper-2); overflow:hidden; margin:7px 0 3px 0; }
+.sx-gauge > i { display:block; height:100%; border-radius:999px; background:var(--sx-brand); }
+.sx-gauge.warn > i { background:var(--sx-amber); }
+.sx-gauge.bad  > i { background:var(--sx-red); }
+
+/* ---------- Journal des agents ---------- */
+.sx-log { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size:.78rem; line-height:1.55; background:#111820; color:#D7E3E1;
+  border-radius:var(--sx-radius); padding:14px 16px; max-height:420px; overflow:auto; }
+.sx-log .t { color:#6F8B88; }
+.sx-log .a { color:#8FD3C6; font-weight:600; }
+.sx-log .w { color:#E8C275; }
+.sx-log .e { color:#E79A8C; }
+
+/* ---------- Tableaux ---------- */
+.sx-table { width:100%; border-collapse:collapse; font-size:.84rem; }
+.sx-table th {
+  text-align:left; font-size:.70rem; text-transform:uppercase; letter-spacing:.09em;
+  color:var(--sx-ink-soft); border-bottom:1px solid var(--sx-line); padding:8px 10px; background:var(--sx-paper-2);
+}
+.sx-table td { padding:8px 10px; border-bottom:1px solid var(--sx-paper-2); vertical-align:top; }
+.sx-table tr:hover td { background:#FCFBF8; }
+
+/* ---------- Divers Streamlit ---------- */
+.stTabs [data-baseweb="tab-list"] { gap:2px; border-bottom:1px solid var(--sx-line); }
+.stTabs [data-baseweb="tab"] { font-size:.86rem; font-weight:560; padding:9px 14px; }
+.stTabs [aria-selected="true"] { color:var(--sx-brand-d) !important; }
+div[data-testid="stSidebarUserContent"] { padding-top:8px; }
+footer, #MainMenu { visibility:hidden; }
+.sx-foot { color:var(--sx-ink-soft); font-size:.74rem; text-align:center;
+  border-top:1px solid var(--sx-line); margin-top:26px; padding-top:12px; }

@@ -1,0 +1,18 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+chaine d approvisionnement,technique,Ensemble des flux du fournisseur au client final.,supply chain,cadena de suministro,cadeia de abastecimento,chèn apwovizyonman,logistique_transport,MET070;MET071;MET072;MET073
+taux de service,technique,Part des commandes livrees completes et a l heure.,service level,nivel de servicio,nivel de servico,to sèvis,logistique_transport,MET070;MET071;MET072;MET073
+stock de securite,technique,Quantite tampon couvrant les aleas de demande.,safety stock,stock de seguridad,stock de seguranca,stòk sekirite,logistique_transport,MET070;MET071;MET072;MET073
+rotation des stocks,technique,Nombre de fois ou le stock est renouvele par an.,inventory turnover,rotacion de inventario,rotacao de stock,rotasyon stòk,logistique_transport,MET070;MET071;MET072;MET073
+preparation de commande,courant,Prelevement et regroupement des articles commandes.,order picking,preparacion de pedidos,picking,preparasyon kòmann,logistique_transport,MET070;MET071;MET072;MET073
+flux tendu,technique,"Approvisionnement au plus juste, sans stock dormant.",just-in-time,justo a tiempo,just-in-time,flo tandi,logistique_transport,MET070;MET071;MET072;MET073
+rupture de charge,technique,Changement de mode ou de contenant pendant le transport.,transhipment,ruptura de carga,transbordo,ripti chaj,logistique_transport,MET070;MET071;MET072;MET073
+incoterm,technique,Regle fixant le partage des frais et des risques.,incoterm,incoterm,incoterm,enkotèm,logistique_transport,MET070;MET071;MET072;MET073
+connaissement,technique,Titre de transport maritime et preuve de la marchandise.,bill of lading,conocimiento de embarque,conhecimento de embarque,konesman,logistique_transport,MET070;MET071;MET072;MET073
+declaration en douane,technique,Document reglementaire de passage de frontiere.,customs declaration,declaracion aduanera,declaracao aduaneira,deklarasyon ladwàn,logistique_transport,MET070;MET071;MET072;MET073
+nomenclature douaniere,technique,Codification determinant les droits applicables.,tariff classification,nomenclatura arancelaria,nomenclatura pautal,nomanklati ladwàn,logistique_transport,MET070;MET071;MET072;MET073
+groupage,technique,Regroupement de plusieurs envois dans un meme vehicule.,groupage,grupaje,grupagem,gwoupaj,logistique_transport,MET070;MET071;MET072;MET073
+dernier kilometre,courant,Segment final de livraison jusqu au destinataire.,last mile,ultima milla,ultima milha,dènye kilomèt,logistique_transport,MET070;MET071;MET072;MET073
+tournee de livraison,courant,Sequence optimisee des points de livraison.,delivery round,ruta de reparto,rota de entrega,tounen livrezon,logistique_transport,MET070;MET071;MET072;MET073
+tachygraphe,technique,Appareil enregistrant les temps de conduite.,tachograph,tacografo,tacografo,takigraf,logistique_transport,MET070;MET071;MET072;MET073
+inventaire tournant,technique,Comptage partiel et regulier des references.,cycle counting,inventario ciclico,inventario rotativo,envantè k ap vire,logistique_transport,MET070;MET071;MET072;MET073
+casser une tournee,familier,Reorganiser en urgence un circuit de livraison.,to break a round,romper una ruta,quebrar uma rota,kase yon tounen,logistique_transport,MET070;MET071;MET072;MET073

@@ -1,0 +1,16 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+main courante,technique,Registre chronologique des evenements d un site.,incident log,libro de registro,livro de ocorrencias,men kouran,securite_defense,MET126;MET127
+consigne de poste,technique,Instruction ecrite propre a un emplacement de garde.,post order,consigna,ordem de servico,konsiy pòs,securite_defense,MET126;MET127
+ronde,courant,Parcours de surveillance effectue a intervalles.,patrol round,ronda,ronda,ronn,securite_defense,MET126;MET127
+levee de doute,technique,Verification sur place du caractere reel d une alarme.,alarm verification,verificacion de alarma,verificacao de alarme,leve dout,securite_defense,MET126;MET127
+perimetre de securite,technique,Zone delimitee et controlee autour d un point sensible.,security perimeter,perimetro de seguridad,perimetro de seguranca,perimèt sekirite,securite_defense,MET126;MET127
+plan de sauvegarde,technique,Organisation prevue pour proteger les personnes.,contingency plan,plan de emergencia,plano de emergencia,plan sovgad,securite_defense,MET126;MET127
+procedure,courant,Suite d actes juridiques encadrant une enquete.,legal proceedings,procedimiento,processo,pwosedi,securite_defense,MET126;MET127
+garde a vue,technique,Mesure privative de liberte durant une enquete.,police custody,detencion preventiva,detencao,gad a vi,securite_defense,MET126;MET127
+commission rogatoire,technique,Delegation d actes d enquete par un juge.,letter of request,comision rogatoria,carta precatoria,komisyon rogatwa,securite_defense,MET126;MET127
+flagrance,technique,Infraction en train de se commettre ou tout juste commise.,flagrante delicto,flagrancia,flagrante,flagrans,securite_defense,MET126;MET127
+chaine de preuve,technique,Tracabilite ininterrompue des elements saisis.,chain of custody,cadena de custodia,cadeia de custodia,chèn prèv,securite_defense,MET126;MET127
+renseignement d interet,technique,Information utile a la prevention d une menace.,actionable intelligence,informacion de interes,informacao de interesse,ransèyman enterè,securite_defense,MET126;MET127
+posture de vigilance,courant,Niveau d attention impose a un dispositif.,alert posture,nivel de alerta,nivel de alerta,pòs vijilans,securite_defense,MET126;MET127
+retour d experience,technique,Analyse apres evenement pour corriger le dispositif.,after-action review,leccion aprendida,licao aprendida,retou eksperyans,securite_defense,MET126;MET127
+faire un rapport,familier,Consigner par ecrit un evenement constate.,to file a report,redactar un parte,fazer um relatorio,fè yon rapò,securite_defense,MET126;MET127

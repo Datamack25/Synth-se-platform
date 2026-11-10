@@ -1,0 +1,16 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+plan de vol,technique,Document decrivant la route et les parametres prevus.,flight plan,plan de vuelo,plano de voo,plan vòl,aeronautique,MET076;MET077;MET078
+clairance,technique,Autorisation donnee par le controle aerien.,clearance,autorizacion,autorizacao,klerans,aeronautique,MET076;MET077;MET078
+separation,technique,Distance minimale imposee entre deux aeronefs.,separation,separacion,separacao,separasyon,aeronautique,MET076;MET077;MET078
+liste de verification,technique,Suite de controles obligatoires avant une phase de vol.,checklist,lista de comprobacion,lista de verificacao,lis verifikasyon,aeronautique,MET076;MET077;MET078
+masse et centrage,technique,Calcul garantissant l equilibre de l aeronef.,weight and balance,peso y equilibrado,peso e centragem,mas ak santraj,aeronautique,MET076;MET077;MET078
+navigabilite,technique,Aptitude technique de l aeronef a voler en securite.,airworthiness,aeronavegabilidad,aeronavegabilidade,navigabilite,aeronautique,MET076;MET077;MET078
+potentiel restant,technique,Heures de vol disponibles avant visite obligatoire.,remaining life,potencial restante,potencial restante,potansyèl ki rete,aeronautique,MET076;MET077;MET078
+visite de maintenance,technique,Intervention programmee selon un referentiel.,maintenance check,revision programada,revisao programada,vizit antretyen,aeronautique,MET076;MET077;MET078
+creneau de decollage,courant,Plage horaire attribuee pour partir.,departure slot,franja de despegue,slot de partida,kreno dekolaj,aeronautique,MET076;MET077;MET078
+deroutement,technique,Changement de destination en cours de vol.,diversion,desvio,divergencia,derutman,aeronautique,MET076;MET077;MET078
+turbulence de sillage,technique,Perturbation laissee par un aeronef precedent.,wake turbulence,turbulencia de estela,turbulencia de esteira,tibilans siyaj,aeronautique,MET076;MET077;MET078
+compte rendu d incident,technique,Signalement documente d un evenement de securite.,incident report,informe de incidente,relatorio de incidente,rapò ensidan,aeronautique,MET076;MET077;MET078
+tour de piste,courant,Circuit effectue autour de l aerodrome.,traffic pattern,circuito de trafico,circuito de trafego,tou pis,aeronautique,MET076;MET077;MET078
+retard au roulage,courant,Attente avant l alignement sur la piste.,taxi delay,retraso en rodaje,atraso em taxi,reta nan woulaj,aeronautique,MET076;MET077;MET078
+etre en attente,familier,Tourner en circuit en attendant l autorisation.,to be in holding,estar en espera,estar em espera,nan tann,aeronautique,MET076;MET077;MET078

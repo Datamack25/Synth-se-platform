@@ -1,0 +1,133 @@
+fr,en,es,pt,ht,categorie
+resume,summary,resumen,resumo,rezime,structure
+synthese,synthesis,sintesis,sintese,sentèz,structure
+resume executif,executive summary,resumen ejecutivo,sumario executivo,rezime egzekitif,structure
+introduction,introduction,introduccion,introducao,entwodiksyon,structure
+contexte,background,contexto,contexto,kontèks,structure
+enjeux,key issues,retos,desafios,enjè,structure
+constat,findings,constataciones,constatacoes,konsta,structure
+analyse,analysis,analisis,analise,analiz,structure
+methode,method,metodo,metodo,metòd,structure
+resultats,results,resultados,resultados,rezilta,structure
+recommandations,recommendations,recomendaciones,recomendacoes,rekòmandasyon,structure
+conclusion,conclusion,conclusion,conclusao,konklizyon,structure
+annexe,appendix,anexo,anexo,anèks,structure
+sommaire,table of contents,indice,indice,somè,structure
+chapitre,chapter,capitulo,capitulo,chapit,structure
+partie,part,parte,parte,pati,structure
+section,section,seccion,secao,seksyon,structure
+page,page,pagina,pagina,paj,structure
+point cle,key point,punto clave,ponto-chave,pwen kle,structure
+idee principale,main idea,idea principal,ideia principal,ide prensipal,structure
+citation,quotation,cita,citacao,sitasyon,structure
+source,source,fuente,fonte,sous,structure
+note de bas de page,footnote,nota al pie,nota de rodape,nòt anba paj,structure
+tableau,table,tabla,tabela,tablo,notion
+figure,figure,figura,figura,figi,structure
+graphique,chart,grafico,grafico,grafik,structure
+presenter,to present,presentar,apresentar,prezante,verbe
+expliquer,to explain,explicar,explicar,esplike,verbe
+demontrer,to demonstrate,demostrar,demonstrar,demontre,verbe
+soutenir,to argue,sostener,sustentar,soutni,verbe
+nuancer,to qualify,matizar,matizar,nuanse,verbe
+comparer,to compare,comparar,comparar,konpare,verbe
+evaluer,to assess,evaluar,avaliar,evalye,verbe
+mesurer,to measure,medir,medir,mezire,verbe
+proposer,to propose,proponer,propor,pwopoze,verbe
+decider,to decide,decidir,decidir,deside,verbe
+arbitrer,to arbitrate,arbitrar,arbitrar,abitre,verbe
+convaincre,to convince,convencer,convencer,konvenk,verbe
+mobiliser,to mobilise,movilizar,mobilizar,mobilize,verbe
+prioriser,to prioritise,priorizar,priorizar,priyorize,verbe
+deployer,to roll out,desplegar,implementar,deplwaye,verbe
+renforcer,to strengthen,reforzar,reforcar,ranfòse,verbe
+reduire,to reduce,reducir,reduzir,redwi,verbe
+suivre,to monitor,supervisar,monitorizar,swiv,verbe
+corriger,to correct,corregir,corrigir,korije,verbe
+valider,to validate,validar,validar,valide,verbe
+objectif,objective,objetivo,objetivo,objektif,notion
+resultat attendu,expected outcome,resultado esperado,resultado esperado,rezilta ki atann,notion
+indicateur,indicator,indicador,indicador,endikatè,notion
+delai,deadline,plazo,prazo,delè,notion
+budget,budget,presupuesto,orcamento,bidjè,notion
+cout,cost,coste,custo,kou,notion
+risque,risk,riesgo,risco,risk,notion
+opportunite,opportunity,oportunidad,oportunidade,opòtinite,notion
+force,strength,fortaleza,forca,fòs,notion
+faiblesse,weakness,debilidad,fraqueza,feblès,notion
+menace,threat,amenaza,ameaca,menas,notion
+partie prenante,stakeholder,parte interesada,parte interessada,pati konsène,notion
+gouvernance,governance,gobernanza,governanca,gouvènans,notion
+responsable,owner,responsable,responsavel,responsab,notion
+etape,step,etapa,etapa,etap,notion
+priorite,priority,prioridad,prioridade,priyorite,notion
+contrainte,constraint,restriccion,restricao,kontrent,notion
+hypothese,assumption,hipotesis,hipotese,ipotèz,notion
+preuve,evidence,evidencia,evidencia,prèv,notion
+impact,impact,impacto,impacto,enpak,notion
+valeur ajoutee,added value,valor anadido,valor acrescentado,valè ajoute,notion
+retour sur investissement,return on investment,retorno de la inversion,retorno do investimento,retou sou envestisman,notion
+echelle,scale,escala,escala,echèl,notion
+perimetre,scope,alcance,ambito,perimèt,notion
+calendrier,timeline,calendario,calendario,kalandriye,notion
+tendance,trend,tendencia,tendencia,tandans,notion
+comparaison,comparison,comparacion,comparacao,konparezon,notion
+exemple,example,ejemplo,exemplo,egzanp,notion
+limite,limitation,limitacion,limitacao,limit,notion
+incertitude,uncertainty,incertidumbre,incerteza,ensètitid,notion
+decision,decision,decision,decisao,desizyon,notion
+plan d action,action plan,plan de accion,plano de acao,plan daksyon,notion
+prochaines etapes,next steps,proximos pasos,proximos passos,pwochèn etap,notion
+point de vigilance,watch point,punto de atencion,ponto de atencao,pwen vijilans,notion
+question ouverte,open question,pregunta abierta,questao aberta,kesyon ouvè,notion
+public cible,target audience,publico objetivo,publico-alvo,piblik sib,notion
+message,message,mensaje,mensagem,mesaj,notion
+histoire,story,historia,historia,istwa,notion
+vision,vision,vision,visao,vizyon,notion
+ambition,ambition,ambicion,ambicao,anbisyon,notion
+engagement,commitment,compromiso,compromisso,angajman,notion
+confiance,trust,confianza,confianca,konfyans,notion
+transparence,transparency,transparencia,transparencia,transparans,notion
+equite,fairness,equidad,equidade,ekite,notion
+urgence,urgency,urgencia,urgencia,ijans,notion
+solution,solution,solucion,solucao,solisyon,notion
+probleme,problem,problema,problema,pwoblèm,notion
+besoin,need,necesidad,necessidade,bezwen,notion
+marche,market,mercado,mercado,mache,notion
+concurrence,competition,competencia,concorrencia,konkirans,notion
+croissance,growth,crecimiento,crescimento,kwasans,notion
+investissement,investment,inversion,investimento,envestisman,notion
+financement,funding,financiacion,financiamento,finansman,notion
+rentabilite,profitability,rentabilidad,rentabilidade,rantabilite,notion
+equipe,team,equipo,equipa,ekip,notion
+competence,skill,competencia,competencia,konpetans,notion
+formation,training,formacion,formacao,fòmasyon,notion
+territoire,territory,territorio,territorio,teritwa,notion
+population,population,poblacion,populacao,popilasyon,notion
+citoyen,citizen,ciudadano,cidadao,sitwayen,notion
+reforme,reform,reforma,reforma,refòm,notion
+loi,law,ley,lei,lwa,notion
+reglement,regulation,reglamento,regulamento,règleman,notion
+controle,control,control,controlo,kontwòl,notion
+sanction,penalty,sancion,sancao,sanksyon,notion
+conformite,compliance,cumplimiento,conformidade,konfòmite,notion
+securite,security,seguridad,seguranca,sekirite,notion
+sante,health,salud,saude,sante,notion
+education,education,educacion,educacao,edikasyon,notion
+environnement,environment,medio ambiente,ambiente,anviwonman,notion
+energie,energy,energia,energia,enèji,notion
+agriculture,agriculture,agricultura,agricultura,agrikilti,notion
+emploi,employment,empleo,emprego,travay,notion
+jeunesse,youth,juventud,juventude,jenès,notion
+diaspora,diaspora,diaspora,diaspora,dyaspora,notion
+transfert d argent,remittance,remesa,remessa,transfè lajan,notion
+corridor de paiement,payment corridor,corredor de pagos,corredor de pagamentos,koridò peman,notion
+inclusion financiere,financial inclusion,inclusion financiera,inclusao financeira,enklizyon finansye,notion
+cooperation,cooperation,cooperacion,cooperacao,koperasyon,notion
+souverainete,sovereignty,soberania,soberania,souvrennte,notion
+resilience,resilience,resiliencia,resiliencia,rezilyans,notion
+innovation,innovation,innovacion,inovacao,inovasyon,notion
+numerique,digital,digital,digital,nimerik,notion
+intelligence artificielle,artificial intelligence,inteligencia artificial,inteligencia artificial,entelijans atifisyèl,notion
+donnees,data,datos,dados,done,notion
+plateforme,platform,plataforma,plataforma,platfòm,notion

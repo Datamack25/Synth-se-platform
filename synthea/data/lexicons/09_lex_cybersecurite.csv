@@ -1,0 +1,22 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+surface d attaque,technique,Ensemble des points par lesquels un systeme peut etre attaque.,attack surface,superficie de ataque,superficie de ataque,sifas atak,cybersecurite,MET042;MET043;MET044
+vulnerabilite,technique,Faiblesse exploitable d un systeme.,vulnerability,vulnerabilidad,vulnerabilidade,vilnerabilite,cybersecurite,MET042;MET043;MET044
+correctif de securite,technique,Mise a jour fermant une faille connue.,security patch,parche de seguridad,correcao de seguranca,korektif sekirite,cybersecurite,MET042;MET043;MET044
+hameconnage,courant,Message frauduleux visant a obtenir des identifiants.,phishing,suplantacion de identidad,phishing,fising,cybersecurite,MET042;MET043;MET044
+rancongiciel,courant,Programme chiffrant les donnees contre paiement.,ransomware,secuestro de datos,ransomware,ransongisyèl,cybersecurite,MET042;MET043;MET044
+elevation de privileges,technique,Obtention de droits superieurs a ceux accordes.,privilege escalation,escalada de privilegios,escalada de privilegios,elvasyon privilèj,cybersecurite,MET042;MET043;MET044
+mouvement lateral,technique,Progression d un attaquant d une machine a l autre.,lateral movement,movimiento lateral,movimento lateral,mouvman lateral,cybersecurite,MET042;MET043;MET044
+indicateur de compromission,technique,Trace technique revelant une intrusion.,indicator of compromise,indicador de compromiso,indicador de comprometimento,endikatè konpwomisyon,cybersecurite,MET042;MET043;MET044
+journalisation,technique,Enregistrement horodate des evenements du systeme.,logging,registro de eventos,registo de eventos,jounalizasyon,cybersecurite,MET042;MET043;MET044
+gestion des identites,technique,Attribution et revocation controlees des acces.,identity management,gestion de identidades,gestao de identidades,jesyon idantite,cybersecurite,MET042;MET043;MET044
+moindre privilege,technique,Principe n accordant que les droits strictement necessaires.,least privilege,minimo privilegio,privilegio minimo,mwens privilèj,cybersecurite,MET042;MET043;MET044
+cloisonnement reseau,technique,Separation des zones pour limiter la propagation.,network segmentation,segmentacion de red,segmentacao de rede,klwazonnman rezo,cybersecurite,MET042;MET043;MET044
+plan de continuite,technique,Organisation permettant de poursuivre l activite en crise.,business continuity plan,plan de continuidad,plano de continuidade,plan kontinwite,cybersecurite,MET042;MET043;MET044
+plan de reprise,technique,Procedure de redemarrage apres sinistre informatique.,disaster recovery plan,plan de recuperacion,plano de recuperacao,plan repriz,cybersecurite,MET042;MET043;MET044
+sauvegarde hors ligne,technique,"Copie deconnectee, inaccessible a un attaquant.",offline backup,copia offline,copia offline,backup deyò liy,cybersecurite,MET042;MET043;MET044
+test d intrusion,technique,Attaque autorisee visant a mesurer la resistance reelle.,penetration test,prueba de intrusion,teste de intrusao,tès entrizyon,cybersecurite,MET042;MET043;MET044
+homologation de securite,technique,Decision formelle autorisant la mise en service.,security accreditation,homologacion de seguridad,homologacao de seguranca,omologasyon sekirite,cybersecurite,MET042;MET043;MET044
+chiffrement de bout en bout,technique,Protection lisible seulement par les extremites.,end-to-end encryption,cifrado de extremo a extremo,criptografia de ponta a ponta,chifraj de bout an bout,cybersecurite,MET042;MET043;MET044
+authentification forte,courant,Verification combinant plusieurs facteurs independants.,multi-factor authentication,autenticacion multifactor,autenticacao multifator,otantifikasyon fò,cybersecurite,MET042;MET043;MET044
+exfiltration de donnees,technique,Sortie non autorisee d informations hors du systeme.,data exfiltration,exfiltracion de datos,exfiltracao de dados,egzfiltrasyon done,cybersecurite,MET042;MET043;MET044
+se faire pwner,familier,Voir son systeme entierement compromis.,to get pwned,ser comprometido,ser comprometido,pran konpwomi,cybersecurite,MET042;MET043;MET044

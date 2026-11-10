@@ -1,0 +1,11 @@
+cle,libelle,sequence,usage_recommande
+pyramide_inversee,Pyramide inversee,Conclusion|Preuves principales|Details|Contexte,"comite, presse, note de decision"
+probleme_solution,Probleme - Solution,Probleme|Consequences|Solution|Benefices|Mise en oeuvre,"pitch, vente, plaidoyer"
+avant_apres_pont,Avant - Apres - Pont,Situation actuelle|Situation souhaitee|Chemin propose,"transformation, conduite du changement"
+quoi_pourquoi_comment,Quoi - Pourquoi - Comment,De quoi s agit-il|Pourquoi est-ce important|Comment proceder,"pedagogie, vulgarisation"
+star,Situation - Tache - Action - Resultat,Situation|Tache|Action|Resultat,"retour d experience, entretien"
+trois_actes,Recit en trois actes,Mise en place|Tension|Resolution,"conference, discours"
+thema_antithese_synthese,These - Antithese - Synthese,These|Antithese|Synthese,"academique, dissertation"
+swot_narratif,SWOT narratif,Forces|Faiblesses|Opportunites|Menaces|Orientation,diagnostic strategique
+chronologique,Chronologique,Origines|Developpements|Situation actuelle|Perspectives,"histoire, monographie"
+decision_options,Decision par options,Decision attendue|Option A|Option B|Comparaison|Recommandation,"comite, conseil"

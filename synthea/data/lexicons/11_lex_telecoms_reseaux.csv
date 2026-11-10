@@ -1,0 +1,18 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+bande passante,technique,Debit maximal theorique d un lien.,bandwidth,ancho de banda,largura de banda,band pasan,telecoms_reseaux,MET049;MET050
+latence,technique,Delai de transmission d un paquet entre deux points.,latency,latencia,latencia,latans,telecoms_reseaux,MET049;MET050
+gigue,technique,Variation de la latence au cours du temps.,jitter,fluctuacion,jitter,jig,telecoms_reseaux,MET049;MET050
+routage,technique,Choix du chemin suivi par les paquets.,routing,enrutamiento,roteamento,woutaj,telecoms_reseaux,MET049;MET050
+reseau local virtuel,technique,Segmentation logique d un reseau physique.,VLAN,VLAN,VLAN,rezo lokal vityèl,telecoms_reseaux,MET049;MET050
+boucle locale,technique,Dernier segment reliant l abonne au reseau.,local loop,bucle local,lacete local,boukl lokal,telecoms_reseaux,MET049;MET050
+fibre optique,courant,Support de transmission par impulsions lumineuses.,optical fibre,fibra optica,fibra otica,fib optik,telecoms_reseaux,MET049;MET050
+raccordement,courant,Operation de branchement d un client au reseau.,connection works,conexion,ligacao,rakòdman,telecoms_reseaux,MET049;MET050
+soudure de fibre,technique,Fusion de deux brins pour assurer la continuite optique.,fibre splicing,fusion de fibra,fusao de fibra,soudi fib,telecoms_reseaux,MET049;MET050
+taux de disponibilite,technique,Part du temps pendant laquelle le service fonctionne.,availability rate,tasa de disponibilidad,taxa de disponibilidade,to disponibilite,telecoms_reseaux,MET049;MET050
+engagement de service,technique,Niveau de qualite contractuellement garanti.,service level agreement,acuerdo de nivel de servicio,acordo de nivel de servico,angajman sèvis,telecoms_reseaux,MET049;MET050
+itinerance,technique,Usage du reseau d un autre operateur a l etranger.,roaming,itinerancia,roaming,itineran,telecoms_reseaux,MET049;MET050
+couverture reseau,courant,Etendue geographique du signal utilisable.,network coverage,cobertura de red,cobertura de rede,kouvèti rezo,telecoms_reseaux,MET049;MET050
+zone blanche,courant,Territoire sans couverture mobile exploitable.,dead zone,zona sin cobertura,zona sem cobertura,zòn blanch,telecoms_reseaux,MET049;MET050
+debit descendant,technique,Vitesse de reception des donnees par l abonne.,downlink speed,velocidad de bajada,velocidade de download,debi desandan,telecoms_reseaux,MET049;MET050
+saturation de cellule,technique,Depassement de la capacite d une antenne.,cell congestion,saturacion de celda,saturacao de celula,satirasyon selil,telecoms_reseaux,MET049;MET050
+ca pingue,familier,La latence est trop elevee pour un usage confortable.,it lags,va con lag,esta com lag,l ap pingue,telecoms_reseaux,MET049;MET050

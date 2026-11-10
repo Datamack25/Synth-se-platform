@@ -1,0 +1,23 @@
+terme_fr,registre,definition_fr,en,es,pt,ht,secteur,metiers
+grand livre,technique,Recueil de tous les comptes et de leurs mouvements.,general ledger,libro mayor,livro razao,gran liv,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+balance generale,technique,Etat des soldes de tous les comptes a une date.,trial balance,balance de sumas y saldos,balancete,balans jeneral,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+ecriture comptable,technique,Enregistrement equilibre au debit et au credit.,journal entry,asiento contable,lancamento contabil,ekriti kontab,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+lettrage,technique,Rapprochement d une facture et de son reglement.,matching,punteo,conciliacao de partidas,letraj,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+compte de resultat,technique,Etat des produits et des charges de l exercice.,income statement,cuenta de resultados,demonstracao de resultados,kont rezilta,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+bilan,technique,Photographie du patrimoine a la cloture.,balance sheet,balance de situacion,balanco patrimonial,bilan,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+annexe,technique,Ensemble des notes explicatives des comptes.,notes to the accounts,memoria,notas explicativas,anèks,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+amortissement,technique,Constatation de la perte de valeur d une immobilisation.,depreciation,amortizacion,depreciacao,amòtisman,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+provision,technique,Charge probable dont le montant ou l echeance est incertain.,provision,provision,provisao,pwovizyon,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+charge constatee d avance,technique,Depense enregistree et rattachable a l exercice suivant.,prepaid expense,gasto anticipado,despesa antecipada,chaj konstate davans,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+produit a recevoir,technique,Revenu acquis mais non encore facture.,accrued income,ingreso devengado,receita a receber,pwodwi pou resevwa,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+cut-off,technique,Rattachement correct des operations au bon exercice.,cut-off,corte temporal,cut-off,kut-òf,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+seuil de signification,technique,Montant au-dela duquel une anomalie influence le lecteur des comptes.,materiality threshold,importancia relativa,materialidade,sèy siyifikasyon,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+circularisation,technique,Confirmation directe obtenue d un tiers par l auditeur.,confirmation request,circularizacion,circularizacao,sikilarizasyon,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+controle de substance,technique,Test portant sur la realite et le montant des operations.,substantive testing,prueba sustantiva,teste substantivo,kontwòl sibstans,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+test de cheminement,technique,Suivi d une operation de bout en bout dans le processus.,walkthrough,prueba de recorrido,walkthrough,tès chemnman,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+separation des taches,technique,Repartition des roles empechant qu une personne controle tout un cycle.,segregation of duties,segregacion de funciones,segregacao de funcoes,separasyon tach,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+reserve d opinion,technique,Limitation exprimee par l auditeur dans son rapport.,qualified opinion,opinion con salvedades,opiniao com ressalvas,rezèv opinyon,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+ecart budgetaire,technique,Difference entre realise et budget.,budget variance,desviacion presupuestaria,desvio orcamentario,ekaman bidjè,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+cloture,courant,Operations d arret des comptes d une periode.,closing,cierre,fechamento,fèmti,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+passer une ecriture,familier,Enregistrer une operation en comptabilite.,to post an entry,contabilizar un asiento,lancar um registro,pase yon ekriti,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
+boucler les comptes,familier,Terminer l arrete comptable d une periode.,to close the books,cerrar las cuentas,fechar as contas,fèmen kont yo,comptabilite_audit,MET024;MET025;MET026;MET027;MET028;MET029
