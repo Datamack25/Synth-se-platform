@@ -58,6 +58,50 @@ def _tesseract_ready() -> bool:
         return False
 
 
+def ocr_diagnostic() -> dict:
+    """Dit precisement ce qui manque a l OCR, et comment y remedier.
+
+    L OCR repose sur deux briques distinctes, souvent confondues :
+      - pytesseract : paquet Python, installe par requirements.txt ;
+      - tesseract   : moteur de reconnaissance, binaire systeme, installe par
+                      packages.txt sur Streamlit Cloud, a la main en local.
+    """
+    module = utils.has_module("pytesseract")
+    binaire = False
+    version = ""
+    langues: list[str] = []
+    if module:
+        try:
+            import pytesseract
+            version = str(pytesseract.get_tesseract_version())
+            binaire = True
+            try:
+                langues = list(pytesseract.get_languages(config=""))
+            except Exception:
+                langues = []
+        except Exception:
+            binaire = False
+
+    if module and binaire:
+        msg = (f"OCR operationnel (tesseract {version}"
+               + (f", {len(langues)} langue(s))" if langues else ")"))
+        remede = ""
+    elif module and not binaire:
+        msg = "Le moteur tesseract est absent du systeme."
+        remede = ("Streamlit Cloud : verifie que packages.txt est a la racine du "
+                  "depot (il contient deja tesseract-ocr). "
+                  "Linux : sudo apt install tesseract-ocr tesseract-ocr-fra. "
+                  "macOS : brew install tesseract tesseract-lang. "
+                  "Windows : installeur UB-Mannheim.")
+    else:
+        msg = "Le paquet Python pytesseract n est pas installe."
+        remede = "pip install -r requirements.txt (pytesseract y figure desormais)."
+
+    return {"module_python": module, "binaire": binaire, "version": version,
+            "langues": langues, "actif": module and binaire,
+            "message": msg, "remede": remede}
+
+
 # --------------------------------------------------------------- helpers
 def _paginate_text(txt: str, size: int = TEXT_PAGE_CHARS) -> list[str]:
     """Decoupe un texte long en blocs, en respectant les paragraphes."""
