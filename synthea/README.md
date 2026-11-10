@@ -29,10 +29,31 @@ L'application s'ouvre sur `http://localhost:8501`.
 3. `requirements.txt` et `packages.txt` sont lus automatiquement
    (`packages.txt` installe `tesseract-ocr` pour l'OCR des PDF scannés et des JPEG).
 
-Options facultatives :
+### OCR : deux briques, pas une
+
+L'OCR repose sur **deux** composants qu'on confond souvent :
+
+| Composant | Quoi | Installé par |
+|---|---|---|
+| `pytesseract` | paquet Python (le pilote) | `requirements.txt` — automatique |
+| `tesseract` | moteur de reconnaissance (binaire système) | `packages.txt` — automatique sur Streamlit Cloud |
+
+`pytesseract` fait désormais partie des dépendances obligatoires : il s'installe
+seul. Le moteur `tesseract`, lui, n'est pas un paquet Python — `pip` ne peut pas
+l'installer. Sur Streamlit Cloud, `packages.txt` s'en charge, **à condition qu'il
+soit à la racine du dépôt**. En local :
 
 ```bash
-pip install -r requirements-optional.txt   # OCR, traduction neuronale, LLM
+sudo apt install tesseract-ocr tesseract-ocr-fra   # Linux
+brew install tesseract tesseract-lang              # macOS
+```
+
+L'onglet Accueil affiche lequel des deux manque, avec la commande exacte.
+
+Autres options facultatives :
+
+```bash
+pip install -r requirements-optional.txt   # traduction neuronale, LLM, PDF→Word fidèle
 ```
 
 Pour activer la reformulation abstractive, créer `.streamlit/secrets.toml` :
@@ -227,7 +248,22 @@ agriculture, industrie, commerce, marketing, RH, éducation, hôtellerie, média
 culture, sport, administration, politique, startup, ONG, sécurité, mode,
 automobile, artisanat.
 
-**Enrichir la base** : ajouter des entrées dans `scripts/build_0*.py`, puis
+**Enrichir la base depuis l'application** : onglet *Lexiques → ➕ Enrichir la base*.
+Aucun script, aucun redémarrage — la base est rechargée à chaque enregistrement.
+
+| Action | Effet |
+|---|---|
+| Ajouter un terme | écrit dans le lexique sectoriel choisi, en 5 langues |
+| Ajouter un métier | code `METxxx` attribué automatiquement |
+| Importer un CSV | fusionne, ignore les doublons, signale les colonnes inconnues |
+| Nouveau lexique | crée un secteur complet, aussitôt interrogeable |
+| Régénérer les 57 fichiers | relance les scripts `build_0*.py` |
+| Télécharger la base | archive ZIP des 57 CSV |
+
+Chaque écriture crée une copie de sécurité dans `data/lexicons/_backup/`,
+restaurable en un clic depuis le même onglet.
+
+**En ligne de commande**, la régénération reste disponible :
 
 ```bash
 python scripts/build_all_lexicons.py
