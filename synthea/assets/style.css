@@ -131,6 +131,55 @@ section[data-testid="stSidebar"] > div {
 }
 div[data-testid="stSidebarUserContent"] { padding-top: 8px; }
 
+/* --- logo SYNTHEA ------------------------------------------- */
+.sx-logo {
+  display: flex; align-items: center; gap: 12px;
+  padding: 4px 2px 14px 2px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--sx-line);
+}
+.sx-logo .mark {
+  width: 46px; height: 46px; flex: 0 0 46px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, var(--sx-brand) 0%, var(--sx-brand-d) 55%, #0E3B39 100%);
+  box-shadow: 0 2px 6px rgba(20,80,77,.32), inset 0 1px 0 rgba(255,255,255,.18);
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.sx-logo .mark::after {
+  content: "";
+  width: 16px; height: 16px;
+  background: var(--sx-white);
+  transform: rotate(45deg);
+  border-radius: 3px;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.22);
+}
+.sx-logo .word { line-height: 1.05; }
+.sx-logo .word b {
+  display: block;
+  font-size: 1.62rem;
+  font-weight: 760;
+  letter-spacing: .035em;
+  background: linear-gradient(92deg, var(--sx-brand-d) 0%, var(--sx-brand) 48%, var(--sx-gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: var(--sx-brand-d);              /* repli si le degrade n est pas gere */
+  -webkit-text-fill-color: transparent;
+}
+.sx-logo .word i {
+  display: block;
+  font-style: normal;
+  font-size: .62rem;
+  letter-spacing: .20em;
+  text-transform: uppercase;
+  color: var(--sx-ink-soft);
+  margin-top: 3px;
+}
+.sx-logo-sub {
+  font-size: .78rem; color: var(--sx-ink-soft);
+  margin: -4px 0 14px 0; line-height: 1.45;
+}
+
 /* =========================================================
    3. ALERTES  (st.info / success / warning / error)
    C etait le « texte noir sur bleu nuit » : le fond venait du theme
